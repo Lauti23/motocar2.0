@@ -184,7 +184,7 @@ body {
     grid-column: 1/13;
     grid-row: 2;
     background-image: url(../assets/motos/kawasakifondo.jpg);
-    background-size: 100% auto;
+    background-size: 100% 100%;
 }
 .mainmotos__ktm {
     grid-column: 1/13;
@@ -290,7 +290,6 @@ body {
     grid-row: 1;
     background-image: url(../assets/repuestos/accesorios.jpg);
     border-left: 0.2em solid white;
-    border-right: 0.2em solid white;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-style: italic;
@@ -390,6 +389,7 @@ body {
     text-align: center;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    color: black;
 }
 .stock__lista {
     grid-column: 2/12;
@@ -534,4 +534,1737 @@ body {
     margin-top: 2em;
     width: 70%;
     height: 80%;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 320px) {
+    /*INDEX*/
+    .grid-mq {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "nav nav nav"
+                            "main main main"
+                            "footer footer footer";
+    }
+    .header {
+        grid-area: nav;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header__logo {
+        width: 100vw;
+        text-align: center;
+    }
+    .header__logo h1 {
+        text-align: center;
+    }
+    .header__logo p {
+        text-align: center;
+    }
+    .header__nav {
+        width: 100vw;
+    }
+    .header__lista {
+        width: 100vw;
+        font-size: 0.65em;
+    }
+    .header__shop {
+        display: none;
+    }
+    .main {
+        grid-area: main;
+        width: 100vw;
+        background-size: 100vh;
+        height: 100vh;
+    }
+    .main__contenedor {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100vw;
+        text-align: center;
+        height: 50vh;
+    }
+    .main__contenedor h2 {
+        font-size: 1.6em;
+        margin-top: 2em;
+    }
+    .main__contenedor p {
+        font-size: 0.8em;
+        padding: 0 1em;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .main__contenedor2 {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100vw;
+        text-align: center;
+    }
+    .main__contenedor2 h2 {
+        font-size: 1.6em;
+        margin-top: 0;
+    }
+    .main__contenedor2 p {
+        font-size: 0.8em;
+        padding: 0 1em;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .footer {
+        grid-area: footer;
+        width: 100vw;
+        height: 9em;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer h3 {
+        display: none;
+    }
+    .footer h4 {
+        font-size: 1em;
+        width: 60%;
+        text-align: center;
+    }
+    .footer__redes {
+        font-size: 0.7em;
+        width: 40%;
+    }
+    /*MOTOS*/
+    .mainmotos {
+        grid-area: main;
+        grid-template-rows: repeat(5, auto);
+        column-gap: 0;
+        row-gap: 0.2em;
+        font-size: 0.6em;
+    }
+    .mainmotos a {
+        height: 5em;
+    }
+    .mainmotos__kawasaki {
+        background-size: 100% 100%;
+    }
+    .section {
+        width: 100vw;
+        text-align: center;
+    }
+    .section__marca {
+        grid-column: 2/12;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .section__modelo {
+        grid-column: 2/12;
+        grid-row: 2;
+        text-align: center;
+        margin-top: 1em;
+        font-size: 1.2em;
+
+    }
+    .section__precio {
+        grid-column: 2/12;
+        grid-row: 2;
+        text-align: center;
+        font-size: 1.2em;
+        margin-top: 2.2em;
+    }
+    .section__moto {
+        height: 10em;
+        grid-column: 2/12;
+        grid-row: 3;
+        margin-top: 1em;
+    }
+    .section__descripcion {
+        display: none;
+    }
+    /*REPUESTOS*/
+    .productos-grid {
+        grid-template-rows: repeat(3, 1fr);
+        height: auto;
+    }
+    .productos__repuestos {
+        grid-column: 1/7;
+        grid-row: 1;
+        justify-content: flex-start;
+        border-right: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__repuestos p {
+        font-size: 0.4em;
+        margin-right: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__accesorios {
+        grid-column: 7/13;
+        border-left: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__accesorios p {
+        font-size: 0.4em;
+        margin-right: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__indumentaria {
+        grid-row: 2;
+        grid-column: 1/13;
+        justify-content: center;
+        background-size: 100%;
+    }
+    .productos__indumentaria p {
+        font-size: 0.4em;
+        margin-right: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__nuevos {
+        grid-column: 1/7;
+        grid-row: 3;
+        justify-content: center;
+        border-right: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__nuevos p {
+        font-size: 0.4em;
+        margin: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__ofertas {
+        grid-column: 7/13;
+        grid-row: 3;
+        justify-content: center;
+        border-left: 0.05em solid white;
+        background-size: 100%;
+        }
+    .productos__ofertas p {
+        font-size: 0.4em;
+        margin: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .stock__tipo {
+        grid-column: 2/12;
+        font-size: 1em;
+        letter-spacing: 0.5em;
+    }
+    .stock__lista {
+        width: 100%;
+        grid-column: 1/13;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 1em;
+        font-size: 0.7em;
+    }
+    .stock__item {
+        grid-column: 1/12;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    .stock__item p {
+        text-align: center;
+    }
+    /*SERVICIOS*/
+    .servicios__titulo1 {
+        margin-top: 1em;
+        font-size: 1em;
+    }
+    .servicios__titulo2 {
+        font-size: 1em;
+    }
+    .servicios__contenedor {
+        flex-direction: column;
+    }
+    .servicios__form {
+        width: 100%;
+    }
+    .servicios__fieldset {
+        width: 100vw;
+    }
+    .servicios__fieldset legend {
+        margin: 0;
+        padding: 0;
+        font-size: 0.8em;
+        margin-left: 0.5em;
+    }
+    .servicios__fieldset p {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.7em;
+    }
+    .servicios__fieldset input {
+        margin: 1em 0.5em;
+        height: 3em;
+    }
+    .servicios__fieldset textarea {
+        margin: 1em 0.5em;
+        height: 5em;
+    }
+    /*CONTACTANOS*/
+    .contacto {
+        flex-direction: column;
+        text-align: center;
+        margin: 1em 0;
+    }
+    .contacto__contenedor {
+        width: 100%;
+    }
+    .contacto__lista li {
+        margin: 0.5em;
+    }
+    .contacto__lista li i {
+        font-size: 1em;
+        margin-right: 0.5em;
+        margin-left: 0.1em;
+    }
+    .contacto__lista li p {
+        font-size: 0.6em;
+    }
+    .contacto__lista li a {
+        font-size: 0.6em;
+    }
+    .contacto__ubicacion {
+        width: 100%;
+    }
+    .contacto__ubicacion h2 {
+        margin-top: 1em;
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .header {
+        grid-area: nav;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header__logo {
+        width: 100vw;
+        text-align: center;
+    }
+    .header__logo h1 {
+        text-align: center;
+    }
+    .header__logo p {
+        text-align: center;
+    }
+    .header__nav {
+        width: 100vw;
+    }
+    .header__lista {
+        width: 100vw;
+        font-size: 0.8em;
+    }
+    .header__shop {
+        display: none;
+    }
+    .main {
+        grid-area: main;
+        width: 100vw;
+        background-size: 100vh;
+        height: 100vh;
+    }
+    .main__contenedor {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100vw;
+        text-align: center;
+        height: 50vh;
+    }
+    .main__contenedor h2 {
+        font-size: 1.6em;
+        margin-top: 2em;
+    }
+    .main__contenedor p {
+        font-size: 0.8em;
+        padding: 0 1em;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .main__contenedor2 {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100vw;
+        text-align: center;
+    }
+    .main__contenedor2 h2 {
+        font-size: 1.6em;
+        margin-top: 0;
+    }
+    .main__contenedor2 p {
+        font-size: 0.8em;
+        padding: 0 1em;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .footer {
+        grid-area: footer;
+        width: 100vw;
+        height: 9em;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer h3 {
+        display: none;
+    }
+    .footer h4 {
+        font-size: 1em;
+        width: 90%;
+        text-align: center;
+    }
+    .footer__redes {
+        font-size: 0.7em;
+        width: 40%;
+    }
+    /*MOTOS*/
+    .mainmotos {
+        grid-area: main;
+        grid-template-rows: repeat(5, auto);
+        column-gap: 0;
+        row-gap: 0.2em;
+        font-size: 0.6em;
+    }
+    .mainmotos a {
+        height: 8em;
+    }
+    .mainmotos__kawasaki {
+        background-size: 100% 100%;
+    }
+    .section {
+        width: 100vw;
+        text-align: center;
+    }
+    .section__marca {
+        grid-column: 2/12;
+        font-size: 1.6em;
+        text-align: center;
+    }
+    .section__modelo {
+        grid-column: 2/12;
+        grid-row: 2;
+        text-align: center;
+        margin-top: 1em;
+        font-size: 1.2em;
+
+    }
+    .section__precio {
+        grid-column: 2/12;
+        grid-row: 2;
+        text-align: center;
+        font-size: 1.2em;
+        margin-top: 2.2em;
+    }
+    .section__moto {
+        height: 15em;
+        grid-column: 2/12;
+        grid-row: 3;
+        margin-top: 1em;
+    }
+    .section__descripcion {
+        display: none;
+    }
+    /*REPUESTOS*/
+    .productos-grid {
+        grid-template-rows: repeat(3, 1fr);
+        height: 10em;
+    }
+    .productos__repuestos {
+        grid-column: 1/7;
+        grid-row: 1;
+        justify-content: flex-start;
+        border-right: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__repuestos p {
+        font-size: 0.5em;
+        margin-right: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__accesorios {
+        grid-column: 7/13;
+        justify-content: flex-end;
+        border-left: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__accesorios p {
+        font-size: 0.5em;
+        margin-right: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__indumentaria {
+        grid-row: 2;
+        grid-column: 1/13;
+        justify-content: center;
+        background-size: 100%;
+    }
+    .productos__indumentaria p {
+        font-size: 0.5em;
+        margin-right: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__nuevos {
+        grid-column: 1/7;
+        grid-row: 3;
+        justify-content: flex-start;
+        border-right: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__nuevos p {
+        font-size: 0.5em;
+        margin: 0;
+        margin-left: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__ofertas {
+        grid-column: 7/13;
+        grid-row: 3;
+        justify-content: flex-end;
+        border-left: 0.05em solid white;
+        background-size: 100%;
+        }
+    .productos__ofertas p {
+        font-size: 0.5em;
+        margin: 0;
+        margin-right: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .stock__tipo {
+        grid-column: 2/12;
+        font-size: 1.3em;
+        letter-spacing: 0.5em;
+    }
+    .stock__lista {
+        width: 100%;
+        grid-column: 1/13;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-top: 1em;
+        font-size: 0.7em;
+    }
+    .stock__item {
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    .stock__item p {
+        text-align: center;
+    }
+    /*SERVICIOS*/
+    .servicios__titulo1 {
+        margin-top: 1em;
+        font-size: 1em;
+    }
+    .servicios__titulo2 {
+        font-size: 1em;
+    }
+    .servicios__contenedor {
+        flex-direction: column;
+    }
+    .servicios__form {
+        width: 100%;
+    }
+    .servicios__fieldset {
+        width: 100vw;
+    }
+    .servicios__fieldset legend {
+        margin: 0;
+        padding: 0;
+        font-size: 0.8em;
+        margin-left: 0.5em;
+    }
+    .servicios__fieldset p {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.7em;
+    }
+    .servicios__fieldset input {
+        margin: 1em 0.5em;
+        height: 3em;
+    }
+    .servicios__fieldset textarea {
+        margin: 1em 0.5em;
+        height: 5em;
+    }
+    /*CONTACTANOS*/
+    .contacto {
+        flex-direction: column;
+        text-align: center;
+        margin: 1em 0;
+    }
+    .contacto__contenedor {
+        width: 100%;
+    }
+    .contacto__lista li {
+        margin: 0.5em;
+    }
+    .contacto__lista li i {
+        font-size: 1em;
+        margin-right: 0.5em;
+        margin-left: 0.1em;
+    }
+    .contacto__lista li p {
+        font-size: 0.65em;
+    }
+    .contacto__lista li a {
+        font-size: 0.6em;
+    }
+    .contacto__ubicacion {
+        width: 100%;
+    }
+    .contacto__ubicacion h2 {
+        margin-top: 1em;
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    .header {
+        grid-area: nav;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header__logo {
+        width: 100vw;
+        text-align: center;
+    }
+    .header__logo h1 {
+        text-align: center;
+    }
+    .header__logo p {
+        text-align: center;
+    }
+    .header__nav {
+        width: 100vw;
+    }
+    .header__lista {
+        width: 100vw;
+        font-size: 1em;
+    }
+    .header__shop {
+        display: none;
+    }
+    .main {
+        grid-area: main;
+        width: 100vw;
+        background-size: 100vh;
+        height: 100vh;
+    }
+    .main__contenedor {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100vw;
+        text-align: center;
+        height: 50vh;
+    }
+    .main__contenedor h2 {
+        font-size: 2em;
+        margin-top: 2em;
+    }
+    .main__contenedor p {
+        font-size: 1em;
+        padding: 0 1.5em;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .main__contenedor2 {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100vw;
+        text-align: center;
+    }
+    .main__contenedor2 h2 {
+        font-size: 2em;
+        margin-top: 0;
+    }
+    .main__contenedor2 p {
+        font-size: 1em;
+        padding: 0 1.5em;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .footer {
+        grid-area: footer;
+        width: 100vw;
+        height: 9em;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer h3 {
+        font-size: 1.4em;
+    }
+    .footer h4 {
+        font-size: 1.2em;
+        width: 90%;
+        text-align: center;
+    }
+    .footer__redes {
+        font-size: 1em;
+        width: 40%;
+    }
+    /*MOTOS*/
+    .mainmotos {
+        grid-area: main;
+        grid-template-rows: repeat(5, auto);
+        column-gap: 0;
+        row-gap: 0.2em;
+        font-size: 0.6em;
+    }
+    .mainmotos a {
+        height: 12em;
+    }
+    .mainmotos p {
+        font-size: 3.5em;
+    }
+    .mainmotos__kawasaki {
+        background-size: 100% 100%;
+    }
+    .section {
+        width: 100vw;
+        text-align: center;
+    }
+    .section__marca {
+        grid-column: 2/12;
+        font-size: 2em;
+        text-align: center;
+    }
+    .section__modelo {
+        grid-column: 2/12;
+        grid-row: 2;
+        text-align: center;
+        margin-top: 1em;
+        font-size: 1.5em;
+
+    }
+    .section__precio {
+        grid-column: 2/12;
+        grid-row: 2;
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 2.2em;
+    }
+    .section__moto {
+        width: 100%;
+        grid-column: 2/12;
+        grid-row: 3;
+        margin-top: 1em;
+    }
+    .section__descripcion {
+        display: none;
+    }
+    /*REPUESTOS*/
+    .productos-grid {
+        grid-template-rows: repeat(3, 1fr);
+        height: 20em;
+    }
+    .productos__repuestos {
+        grid-column: 1/7;
+        grid-row: 1;
+        justify-content: flex-start;
+        border-right: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__repuestos p {
+        font-size: 0.7em;
+        margin-right: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__accesorios {
+        grid-column: 7/13;
+        justify-content: flex-end;
+        border-left: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__accesorios p {
+        font-size: 0.7em;
+        margin-right: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__indumentaria {
+        grid-row: 2;
+        grid-column: 1/13;
+        justify-content: center;
+        background-size: 100%;
+    }
+    .productos__indumentaria p {
+        font-size: 0.7em;
+        margin-right: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__nuevos {
+        grid-column: 1/7;
+        grid-row: 3;
+        justify-content: flex-start;
+        border-right: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__nuevos p {
+        font-size: 0.7em;
+        margin: 0;
+        margin-left: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__ofertas {
+        grid-column: 7/13;
+        grid-row: 3;
+        justify-content: flex-end;
+        border-left: 0.05em solid white;
+        background-size: 100%;
+        }
+    .productos__ofertas p {
+        font-size: 0.7em;
+        margin: 0;
+        margin-right: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .stock__tipo {
+        grid-column: 2/12;
+        font-size: 1.8em;
+        letter-spacing: 0.5em;
+    }
+    .stock__lista {
+        width: 100%;
+        grid-column: 1/13;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1em;
+        font-size: 0.7em;
+    }
+    .stock__item {
+        width: 50%;
+        margin: 0;
+        margin-bottom: 1.5em;
+    }
+    .stock__item p {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    /*SERVICIOS*/
+    .servicios__titulo1 {
+        margin-top: 1em;
+        font-size: 1.3em;
+    }
+    .servicios__titulo2 {
+        font-size: 1.3em;
+    }
+    .servicios__contenedor {
+        flex-direction: column;
+    }
+    .servicios__form {
+        width: 100%;
+    }
+    .servicios__fieldset {
+        width: 100vw;
+    }
+    .servicios__fieldset legend {
+        margin: 0;
+        padding: 0 0.5em;
+        font-size: 1em;
+        margin-left: 2em;
+    }
+    .servicios__fieldset p {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+    }
+    .servicios__fieldset input {
+        margin: 1em 0.5em;
+        height: 3em;
+    }
+    .servicios__fieldset textarea {
+        margin: 1em 0.5em;
+        height: 5em;
+    }
+    /*CONTACTANOS*/
+    .contacto {
+        flex-direction: column;
+        text-align: center;
+        margin: 1em 0;
+    }
+    .contacto__contenedor {
+        width: 100%;
+    }
+    .contacto__lista li {
+        margin: 0.5em;
+    }
+    .contacto__lista li i {
+        font-size: 1em;
+        margin-right: 0.5em;
+        margin-left: 0.1em;
+    }
+    .contacto__lista li p {
+        font-size: 0.8em;
+    }
+    .contacto__lista li a {
+        font-size: 0.8em;
+    }
+    .contacto__ubicacion {
+        width: 100%;
+    }
+    .contacto__ubicacion h2 {
+        margin-top: 1em;
+        font-size: 1.4em;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .header {
+        grid-area: nav;
+        display: flex;
+    }
+    .header__logo {
+        width: 25%;
+        text-align: center;
+    }
+    .header__logo h1 {
+        text-align: center;
+    }
+    .header__logo p {
+        text-align: center;
+    }
+    .header__nav {
+        width: 75%;
+    }
+    .header__lista {
+        width: 100%;
+        font-size: 1em;
+    }
+    .header__shop {
+        display: none;
+    }
+    .main {
+        width: 100vw;
+        background-size: 100vh;
+        height: 100vh;
+    }
+    .main__contenedor {
+        grid-column: 6/12;
+        grid-row: 1/4;
+        text-align: center;
+    }
+    .main__contenedor h2 {
+        font-size: 2em;
+        margin-top: 2em;
+        text-shadow: 2px 2px 2px white;
+    }
+    .main__contenedor p {
+        font-size: 1em;
+        padding: 0 1.5em;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+    .main__contenedor2 {
+        grid-column: 6/12;
+        grid-row: 4/6;
+        text-align: center;
+    }
+    .main__contenedor2 h2 {
+        font-size: 2em;
+        margin-top: 0;
+        text-shadow: 2px 2px 2px white;
+    }
+    .main__contenedor2 p {
+        font-size: 1em;
+        padding: 0 1.5em;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+    .footer {
+        grid-area: footer;
+        width: 100vw;
+        height: 9em;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer h3 {
+        font-size: 1.8em;
+    }
+    .footer h4 {
+        font-size: 1.6em;
+        width: 90%;
+        text-align: center;
+    }
+    .footer__redes {
+        font-size: 1.3em;
+        width: 40%;
+    }
+    /*MOTOS*/
+    .mainmotos {
+        grid-template-rows: repeat(5, auto);
+        column-gap: 0;
+        row-gap: 0.2em;
+        font-size: 0.6em;
+    }
+    .mainmotos a {
+        height: 15em;
+    }
+    .mainmotos p {
+        font-size: 3.5em;
+    }
+    .mainmotos__kawasaki {
+        background-size: 100% 100%;
+    }
+    .section {
+        width: 100vw;
+        text-align: center;
+    }
+    .section__marca {
+        grid-column: 2/12;
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .section__modelo {
+        grid-column: 6/12;
+        grid-row: 2;
+        text-align: center;
+        margin-top: 1em;
+        font-size: 1.5em;
+    }
+    .section__precio {
+        grid-column: 6/12;
+        grid-row: 2;
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 2.2em;
+    }
+    .section__moto {
+        width: 100%;
+        height: auto;
+        grid-column: 2/6;
+        grid-row: 3;
+        margin-top: 1em;
+    }
+    .section__descripcion {
+        grid-column: 6/12;
+        grid-row: 3;
+        margin-top: 0;
+        margin-left: 0.5em;
+        align-self: center;
+    }
+    /*REPUESTOS*/
+    .productos-grid {
+        grid-template-rows: repeat(3, 1fr);
+        height: 30em;
+    }
+    .productos__repuestos {
+        grid-column: 1/7;
+        grid-row: 1;
+        justify-content: flex-start;
+        border-right: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__repuestos p {
+        font-size: 1em;
+        margin-right: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__accesorios {
+        grid-column: 7/13;
+        justify-content: flex-end;
+        border-left: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__accesorios p {
+        font-size: 1em;
+        margin-right: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__indumentaria {
+        grid-row: 2;
+        grid-column: 1/13;
+        justify-content: center;
+        background-size: 100%;
+    }
+    .productos__indumentaria p {
+        font-size: 1em;
+        margin-right: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__nuevos {
+        grid-column: 1/7;
+        grid-row: 3;
+        justify-content: flex-start;
+        border-right: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__nuevos p {
+        font-size: 1em;
+        margin: 0;
+        margin-left: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__ofertas {
+        grid-column: 7/13;
+        grid-row: 3;
+        justify-content: flex-end;
+        border-left: 0.05em solid white;
+        background-size: 100%;
+        }
+    .productos__ofertas p {
+        font-size: 1em;
+        margin: 0;
+        margin-right: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .stock__tipo {
+        grid-column: 2/12;
+        font-size: 2em;
+        letter-spacing: 0.5em;
+    }
+    .stock__lista {
+        width: 100%;
+        grid-column: 1/13;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1em;
+        font-size: 0.7em;
+    }
+    .stock__item {
+        width: 50%;
+        margin: 0;
+        margin-bottom: 1.5em;
+    }
+    .stock__item p {
+        font-size: 1.6em;
+        text-align: center;
+    }
+    /*SERVICIOS*/
+    .servicios__titulo1 {
+        margin-top: 1em;
+        font-size: 1.8em;
+    }
+    .servicios__titulo2 {
+        font-size: 1.8em;
+    }
+    .servicios__contenedor {
+        flex-direction: column;
+    }
+    .servicios__form {
+        width: 100%;
+    }
+    .servicios__fieldset {
+        width: 100vw;
+    }
+    .servicios__fieldset legend {
+        margin: 0;
+        padding: 0 0.5em;
+        font-size: 1.3em;
+        margin-left: 2em;
+    }
+    .servicios__fieldset p {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2em;
+    }
+    .servicios__fieldset input {
+        margin: 1em 0.5em;
+        height: 3em;
+    }
+    .servicios__fieldset textarea {
+        margin: 1em 0.5em;
+        height: 5em;
+    }
+    /*CONTACTANOS*/
+    .contacto {
+        flex-direction: column;
+        text-align: center;
+        margin: 1em 0;
+    }
+    .contacto__contenedor {
+        width: 100%;
+    }
+    .contacto__lista li {
+        margin: 0.5em;
+    }
+    .contacto__lista li i {
+        font-size: 1em;
+        margin-right: 0.5em;
+        margin-left: 0.1em;
+    }
+    .contacto__lista li p {
+        font-size: 1em;
+    }
+    .contacto__lista li a {
+        font-size: 1em;
+    }
+    .contacto__ubicacion {
+        width: 100%;
+    }
+    .contacto__ubicacion h2 {
+        margin-top: 1em;
+        font-size: 2em;
+    }
+    .contacto__ubicacion iframe {
+        height: 20em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .header__logo {
+        width: 25%;
+        text-align: center;
+    }
+    .header__logo h1 {
+        text-align: center;
+    }
+    .header__logo p {
+        text-align: center;
+    }
+    .header__nav {
+        width: 75%;
+    }
+    .header__lista {
+        width: 100%;
+        font-size: 1em;
+    }
+    .header__shop {
+        display: none;
+    }
+    .main {
+        width: 100%;
+        height: 100vh;
+    }
+    .main__contenedor {
+        grid-column: 7/12;
+        grid-row: 2/4;
+        text-align: center;
+    }
+    .main__contenedor h2 {
+        font-size: 2em;
+        text-shadow: 2px 2px 2px white;
+    }
+    .main__contenedor p {
+        font-size: 1em;
+        padding: 0 1.5em;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+    .main__contenedor2 {
+        grid-column: 7/12;
+        grid-row: 4/6;
+        text-align: center;
+    }
+    .main__contenedor2 h2 {
+        font-size: 2em;
+        margin-top: 2em;
+        text-shadow: 2px 2px 2px white;
+    }
+    .main__contenedor2 p {
+        font-size: 1em;
+        padding: 0 1.5em;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+    .footer {
+        grid-area: footer;
+        width: 100vw;
+        height: 9em;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer h3 {
+        font-size: 1.8em;
+    }
+    .footer h4 {
+        font-size: 1.6em;
+        width: 90%;
+        text-align: center;
+    }
+    .footer__redes {
+        font-size: 1.3em;
+        width: 40%;
+    }
+    /*MOTOS*/
+    .mainmotos {
+        grid-template-rows: repeat(5, auto);
+        column-gap: 0;
+        row-gap: 0.2em;
+        font-size: 0.6em;
+    }
+    .mainmotos a {
+        height: 15em;
+    }
+    .mainmotos p {
+        font-size: 3.5em;
+    }
+    .mainmotos__kawasaki {
+        background-size: 100% 100%;
+    }
+    .section {
+        width: 100vw;
+        text-align: center;
+    }
+    .section__marca {
+        grid-column: 2/12;
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .section__modelo {
+        grid-column: 6/12;
+        grid-row: 2;
+        text-align: start;
+        margin-top: 1em;
+        font-size: 1.5em;
+        margin-left: 0.5em;
+    }
+    .section__precio {
+        grid-column: 6/12;
+        grid-row: 2;
+        text-align: start;
+        font-size: 1.5em;
+        margin-top: 2.2em;
+        margin-left: 0.5em;
+    }
+    .section__moto {
+        width: 100%;
+        height: auto;
+        grid-column: 2/6;
+        grid-row: 3;
+        margin-top: 0;
+    }
+    .section__descripcion {
+        grid-column: 6/12;
+        grid-row: 3;
+        margin-top: 0;
+        margin-left: 0.5em;
+        align-self: center;
+    }
+    /*REPUESTOS*/
+    .productos-grid {
+        grid-template-rows: repeat(3, 1fr);
+        height: 30em;
+    }
+    .productos__repuestos {
+        grid-column: 1/7;
+        grid-row: 1;
+        justify-content: flex-start;
+        border-right: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__repuestos p {
+        font-size: 1em;
+        margin-right: 0;
+        margin-left: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__accesorios {
+        grid-column: 7/13;
+        justify-content: flex-end;
+        border-left: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__accesorios p {
+        font-size: 1em;
+        margin-right: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__indumentaria {
+        grid-row: 2;
+        grid-column: 1/13;
+        justify-content: center;
+        background-size: 100%;
+    }
+    .productos__indumentaria p {
+        font-size: 1em;
+        margin-right: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__nuevos {
+        grid-column: 1/7;
+        grid-row: 3;
+        justify-content: flex-start;
+        border-right: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__nuevos p {
+        font-size: 1em;
+        margin: 0;
+        margin-left: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__ofertas {
+        grid-column: 7/13;
+        grid-row: 3;
+        justify-content: flex-end;
+        border-left: 0.05em solid white;
+        background-size: 100%;
+        }
+    .productos__ofertas p {
+        font-size: 1em;
+        margin: 0;
+        margin-right: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .stock__tipo {
+        grid-column: 2/12;
+        font-size: 2.5em;
+        letter-spacing: 0.5em;
+        margin-bottom: 1em;
+    }
+    .stock__lista {
+        width: 100%;
+        grid-column: 1/13;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1em;
+        font-size: 0.8em;
+    }
+    .stock__item {
+        width: 50%;
+        margin: 0;
+        margin-bottom: 1.5em;
+    }
+    .stock__item p {
+        font-size: 1.6em;
+        text-align: center;
+    }
+    /*SERVICIOS*/
+    .servicios__titulo1 {
+        margin-top: 1em;
+        font-size: 1.8em;
+    }
+    .servicios__titulo2 {
+        font-size: 1.8em;
+    }
+    .servicios__contenedor {
+        flex-direction: column;
+    }
+    .servicios__form {
+        width: 100%;
+    }
+    .servicios__fieldset {
+        width: 100vw;
+    }
+    .servicios__fieldset legend {
+        margin: 0;
+        padding: 0 0.5em;
+        font-size: 1.3em;
+        margin-left: 2em;
+    }
+    .servicios__fieldset p {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2em;
+    }
+    .servicios__fieldset input {
+        margin: 1em 0.5em;
+        height: 3em;
+    }
+    .servicios__fieldset textarea {
+        margin: 1em 0.5em;
+        height: 5em;
+    }
+    /*CONTACTANOS*/
+    .contacto {
+        text-align: center;
+        margin: 1em 0;
+    }
+    .contacto__contenedor {
+        width: 50%;
+        margin-top: 2em;
+    }
+    .contacto__lista li {
+        margin: 0.5em;
+    }
+    .contacto__lista li i {
+        font-size: 1.3em;
+        margin-right: 0.5em;
+        margin-left: 0.1em;
+    }
+    .contacto__lista li p {
+        font-size: 1em;
+    }
+    .contacto__lista li a {
+        font-size: 1em;
+    }
+    .contacto__ubicacion {
+        width: 50%;
+    }
+    .contacto__ubicacion h2 {
+        margin-top: 1em;
+        font-size: 2em;
+    }
+    .contacto__ubicacion iframe {
+        height: 20em;
+    }
+}
+@media screen and (min-width: 1201px) and (max-width: 1773px) {
+    .header__logo {
+        width: 25%;
+        text-align: center;
+    }
+    .header__logo h1 {
+        text-align: center;
+    }
+    .header__logo p {
+        text-align: center;
+    }
+    .header__nav {
+        width: 65%;
+    }
+    .header__lista {
+        width: 100%;
+        font-size: 1em;
+    }
+    .header__shop {
+        width: 10%;
+    }
+    .main {
+        width: 100%;
+    }
+    .main__contenedor {
+        grid-column: 9/12;
+        grid-row: 2/4;
+        text-align: center;
+    }
+    .main__contenedor h2 {
+        font-size: 2.5em;
+    }
+    .main__contenedor p {
+        font-size: 1em;
+    }
+    .main__contenedor2 {
+        grid-column: 9/12;
+        grid-row: 4/6;
+        text-align: center;
+    }
+    .main__contenedor2 h2 {
+        font-size: 2.5em;
+        margin-top: 2em;
+    }
+    .main__contenedor2 p {
+        font-size: 1em;
+    }
+    .footer {
+        width: 100%;
+        height: 20%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer h3 {
+        font-size: 1.8em;
+    }
+    .footer h4 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .footer__redes {
+        font-size: 1.3em;
+        width: 10%;
+    }
+    /*MOTOS*/
+    .mainmotos {
+        grid-template-rows: repeat(5, auto);
+        column-gap: 0;
+        row-gap: 0.2em;
+        font-size: 0.6em;
+    }
+    .mainmotos a {
+        height: 15em;
+    }
+    .mainmotos p {
+        font-size: 3.5em;
+    }
+    .mainmotos__kawasaki {
+        background-size: 100% 100%;
+    }
+    .section {
+        width: 100vw;
+        text-align: center;
+    }
+    .section__marca {
+        grid-column: 2/12;
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .section__modelo {
+        grid-column: 7/12;
+        grid-row: 2;
+        text-align: start;
+        margin-top: 1em;
+        font-size: 1.5em;
+        margin-left: 0.5em;
+    }
+    .section__precio {
+        grid-column: 7/12;
+        grid-row: 2;
+        text-align: start;
+        font-size: 1.5em;
+        margin-top: 2.2em;
+        margin-left: 0.5em;
+    }
+    .section__moto {
+        width: 100%;
+        height: auto;
+        grid-column: 2/6;
+        grid-row: 3;
+        margin-top: 0;
+    }
+    .section__descripcion {
+        grid-column: 7/12;
+        grid-row: 3;
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+    }
+    /*REPUESTOS*/
+    .productos-grid {
+        grid-template-rows: repeat(3, 1fr);
+        height: 30em;
+    }
+    .productos__repuestos {
+        grid-column: 1/7;
+        grid-row: 1;
+        justify-content: flex-start;
+        border-right: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__repuestos p {
+        font-size: 1em;
+        margin-right: 0;
+        margin-left: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__accesorios {
+        grid-column: 7/13;
+        justify-content: flex-end;
+        border-left: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__accesorios p {
+        font-size: 1em;
+        margin-right: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__indumentaria {
+        grid-row: 2;
+        grid-column: 1/13;
+        justify-content: center;
+        background-size: 100%;
+    }
+    .productos__indumentaria p {
+        font-size: 1em;
+        margin-right: 0;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__nuevos {
+        grid-column: 1/7;
+        grid-row: 3;
+        justify-content: flex-start;
+        border-right: 0.05em solid white;
+        background-size: 100%;
+    }
+    .productos__nuevos p {
+        font-size: 1em;
+        margin: 0;
+        margin-left: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .productos__ofertas {
+        grid-column: 7/13;
+        grid-row: 3;
+        justify-content: flex-end;
+        border-left: 0.05em solid white;
+        background-size: 100%;
+        }
+    .productos__ofertas p {
+        font-size: 1em;
+        margin: 0;
+        margin-right: 0.2em;
+        text-shadow: 1px 1px 1px white;
+    }
+    .stock__tipo {
+        grid-column: 2/12;
+        font-size: 3em;
+        letter-spacing: 0.5em;
+        margin-bottom: 1em;
+    }
+    .stock__lista {
+        width: 100%;
+        grid-column: 1/13;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1em;
+        font-size: 0.8em;
+    }
+    .stock__item {
+        width: 33%;
+        margin: 0;
+        margin-bottom: 1.5em;
+    }
+    .stock__item p {
+        font-size: 1.6em;
+        text-align: center;
+    }
+    /*SERVICIOS*/
+    .servicios__titulo1 {
+        margin-top: 1em;
+        font-size: 1.8em;
+    }
+    .servicios__titulo2 {
+        font-size: 1.8em;
+    }
+    .servicios__contenedor {
+        flex-direction: column;
+    }
+    .servicios__form {
+        width: 100%;
+    }
+    .servicios__fieldset {
+        width: 100vw;
+    }
+    .servicios__fieldset legend {
+        margin: 0;
+        padding: 0 0.5em;
+        font-size: 1.3em;
+        margin-left: 2em;
+    }
+    .servicios__fieldset p {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2em;
+    }
+    .servicios__fieldset input {
+        margin: 1em 20em;
+        height: 3em;
+    }
+    .servicios__fieldset textarea {
+        margin: 1em 20em;
+        height: 5em;
+    }
+    /*CONTACTANOS*/
+    .contacto {
+        text-align: center;
+        margin: 1em 0;
+    }
+    .contacto__contenedor {
+        width: 50%;
+        margin-top: 2em;
+    }
+    .contacto__lista li {
+        margin: 1em 0;
+    }
+    .contacto__lista li i {
+        font-size: 1.5em;
+        margin-right: 0.5em;
+        margin-left: 0.1em;
+    }
+    .contacto__lista li p {
+        font-size: 1em;
+    }
+    .contacto__lista li a {
+        font-size: 1em;
+    }
+    .contacto__ubicacion {
+        width: 50%;
+    }
+    .contacto__ubicacion h2 {
+        margin-top: 1em;
+        font-size: 2em;
+    }
+    .contacto__ubicacion iframe {
+        height: 30em;
+    }
 }
