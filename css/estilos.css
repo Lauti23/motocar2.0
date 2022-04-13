@@ -307,6 +307,7 @@ body {
     grid-row: 1;
     background-image: url(../assets/repuestos/accesorios.jpg);
     border-left: 0.2em solid white;
+    border-right: 0.2em solid white;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-style: italic;
@@ -2290,3 +2291,7 @@ body {
         height: 30em;
     }
 }
+
+
+
+/*BOOTSTRAP*/
