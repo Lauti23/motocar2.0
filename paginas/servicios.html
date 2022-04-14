@@ -17,90 +17,69 @@
     <title>Motocar Repuestos</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <a href="../index.html"><h1>MOTOCAR</h1></a>
-            <a href="../index.html"><p>REPUESTOS</p></a>
-        </div>
-        <div class="header__nav">
-            <ul class="header__lista">
-                <li><a href="motos.html"> MOTOS</a></li>
-                <li><a href="repuestos.html"> REPUESTOS</a></li>
-                <li><a href="servicios.html"> SERVICIOS</a></li>
-                <li><a href="contactanos.html"> CONTACTANOS</a></li>
-            </ul>
-        </div>
-        <div class="header__shop">
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
+    <header>                 
+        <nav class="navbar navbar-expand-xxl navbar-dark bg-dark bg-gradient p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-3 fw-bold fst-italic logo" href="../index.html">MOTOCAR REPUESTOS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 link" aria-current="page" href="motos.html">MOTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 text-white link" href="repuestos.html">REPUESTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 text-white link" href="servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 text-white link" href="contactanos.html">CONTACTANOS</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2 buscador" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                        <button class="btn btn-outline-light bg-primary boton" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main class="servicios">
-        <h2 class="servicios__titulo1">SI YA COMPRASTE TU PRODUCTO EN NUESTRO SITIO, VISITANOS PARA BRINDARTE EL MEJOR SERVICIO POST-VENTA.</h2>
-        <h3 class="servicios__titulo2">O SI TENES ALGUN PROBLEMA MECÁNICO CON TU MOTO, NOSOTROS TE LO ARREGLAMOS.</h3>
-        <form class="d-flex flex-column justify-content-center">
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+    <main>
+        <h1 class="fs-4 fw-bold fst-italic text-center my-5 encabezado">SI YA COMPRASTE TU PRODUCTO EN NUESTRO SITIO, VISITANOS PARA BRINDARTE EL MEJOR SERVICIO POST-VENTA.</h1>
+        <h2 class="fs-4 fw-bold fst-italic text-center mb-4 encabezado">O SI TENES ALGUN PROBLEMA MECÁNICO CON TU MOTO, NOSOTROS TE LO ARREGLAMOS.</h2>
+        <form class="w-75 mx-auto my-5 formulario">
+                <legend>Solicita tu turno mediante este formulario:</legend>
+                <div class="mb-3">
+                    <label for="exampleInputName1" class="form-label">Nombre y Apellido:</label>
+                    <input type="name" class="form-control" id="exampleInputEmail1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputTel1" class="form-label">Número de teléfono:</label>
+                    <input type="tel" class="form-control" id="exampleInputTel1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Consulta:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>    
         </form>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <!--
-        <div class="servicios__contenedor">
-            <form class="servicios__form" method="post">
-                <fieldset class="servicios__fieldset">
-                    <legend>Solicitá tu turno mediante este formulario:</legend>
-                    <p>
-                        <label for="nombre">Nombre y Apellido:</label>
-                        <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
-                    </p>
-                    <p>
-                        <label for="teléfono">Teléfono:</label> 
-                        <input type="tel" name="teléfono" placeholder="(Cod. de Area) Número de teléfono" required>
-                    </p>
-                    <p>
-                        <label for="email">E-Mail:</label> 
-                        <input type="email" name="email" placeholder="E-Mail" required>
-                    </p>
-                    <p>
-                        <label for="consulta">Consulta:</label> 
-                        <textarea name="consulta" placeholder="Escribí tu consulta acá" required></textarea>
-                    </p>
-                    <div class="servicios__boton">
-                        <input type="submit" value="Enviar consulta">
-                    </div>
-                </fieldset>
-            </form>
-        </div>-->
     </main>
-    <footer class="footer">
-        <h3>2022 - TODOS LOS DERECHOS RESERVADOS - MOTOCAR</h3>
-        <H4>SEGUINOS EN NUESTRAS REDES SOCIALES</H4>
-        <div class="footer__redes">
-            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a>
+    <footer class="container-fluid mt-5 bg-dark bg-gradient text-white footer">
+        <div class="row d-flex align-items-center h-100">
+            <h3 class="col-4 fs-5 fst-italic fw-bolder text-center mb-0">2022 - TODOS LOS DERECHOS RESERVADOS - MOTOCAR</h3>
+            <H4 class="col-4 fs-5 fst-italic fw-bolder text-center mb-0">SEGUINOS EN NUESTRAS REDES SOCIALES</H4>
+            <div class="col-4 d-flex justify-content-evenly">
+                <a href="#" class="text-decoration-none text-white w-25"><i class="fa-brands fa-instagram-square fs-1"></i></a>
+                <a href="#" class="text-decoration-none text-white w-25"><i class="fa-brands fa-facebook-square fs-1"></i></a>
+                <a href="#" class="text-decoration-none text-white w-25"><i class="fa-brands fa-whatsapp-square fs-1"></i></a>
+            </div>
         </div>
     </footer>
     <script src="../bootstrap/js/bootstrap.min.js"></script>

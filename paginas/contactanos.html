@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <!--Fuente "Manrope"-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,25 +13,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,364;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!--Font-Awesome-->
     <script src="https://kit.fontawesome.com/403dba6bea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Motocar Repuestos</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <a href="../index.html"><h1>MOTOCAR</h1></a>
-            <a href="../index.html"><p>REPUESTOS</p></a>
-        </div>
-        <div class="header__nav">
-            <ul class="header__lista">
-                <li><a href="motos.html"> MOTOS</a></li>
-                <li><a href="repuestos.html"> REPUESTOS</a></li>
-                <li><a href="servicios.html"> SERVICIOS</a></li>
-                <li><a href="contactanos.html"> CONTACTANOS</a></li>
-            </ul>
-        </div>
-        <div class="header__shop">
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
+    <header>                 
+        <nav class="navbar navbar-expand-xxl navbar-dark bg-dark bg-gradient p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-3 fw-bold fst-italic logo" href="../index.html">MOTOCAR REPUESTOS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 link" aria-current="page" href="motos.html">MOTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 text-white link" href="repuestos.html">REPUESTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 text-white link" href="servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 text-white link" href="contactanos.html">CONTACTANOS</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2 buscador" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                        <button class="btn btn-outline-light bg-primary boton" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
     <main class="contacto">
         <div class="contacto__contenedor">
@@ -67,14 +81,17 @@
             <iframe class="maincontacto__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.061513285785!2d-69.22781531336396!3d-51.62208233347306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdb6f955bc58df4f%3A0xadd8e4d6d1ddce71!2sEntre%20R%C3%ADos%20374%2C%20Z9400ITH%20R%C3%ADo%20Gallegos%2C%20Santa%20Cruz!5e0!3m2!1ses-419!2sar!4v1647316321614!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </main>
-    <footer class="footer">
-        <h3>2022 - TODOS LOS DERECHOS RESERVADOS - MOTOCAR</h3>
-        <H4>SEGUINOS EN NUESTRAS REDES SOCIALES</H4>
-        <div class="footer__redes">
-            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a>
+    <footer class="container-fluid mt-5 bg-dark bg-gradient text-white footer">
+        <div class="row d-flex align-items-center h-100">
+            <h3 class="col-4 fs-5 fst-italic fw-bolder text-center mb-0">2022 - TODOS LOS DERECHOS RESERVADOS - MOTOCAR</h3>
+            <H4 class="col-4 fs-5 fst-italic fw-bolder text-center mb-0">SEGUINOS EN NUESTRAS REDES SOCIALES</H4>
+            <div class="col-4 d-flex justify-content-evenly">
+                <a href="#" class="text-decoration-none text-white w-25"><i class="fa-brands fa-instagram-square fs-1"></i></a>
+                <a href="#" class="text-decoration-none text-white w-25"><i class="fa-brands fa-facebook-square fs-1"></i></a>
+                <a href="#" class="text-decoration-none text-white w-25"><i class="fa-brands fa-whatsapp-square fs-1"></i></a>
+            </div>
         </div>
     </footer>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

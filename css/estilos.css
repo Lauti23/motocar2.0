@@ -2325,3 +2325,9 @@ body {
     height: 100%;
     width: 100%;
 }
+.formulario {
+    font-family: 'Manrope', sans-serif;
+}
+.encabezado {
+    font-family: 'Open Sans', sans-serif;
+}
