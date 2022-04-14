@@ -2300,7 +2300,7 @@ body {
     /*INDEX*/
 .index {
     background-image: url(../assets/index/moto01.jpg);
-    background-size: cover;
+    background-size: 100% auto;
 }
 .logo {
     font-family: 'Open Sans', sans-serif;
