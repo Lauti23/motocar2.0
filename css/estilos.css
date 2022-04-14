@@ -2331,6 +2331,6 @@ body {
 .encabezado {
     font-family: 'Open Sans', sans-serif;
 }
-.contacto {
-    height: auto;
+.card-img-top {
+    height: 20em;
 }
