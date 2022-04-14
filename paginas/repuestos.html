@@ -18,59 +18,63 @@
     <title>Motocar Repuestos</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <a href="../index.html"><h1>MOTOCAR</h1></a>
-            <a href="../index.html"><p>REPUESTOS</p></a>
-        </div>
-        <div class="header__nav">
-            <ul class="header__lista">
-                <li><a href="motos.html">MOTOS</a></li>
-                <li><a href="repuestos.html">REPUESTOS</a></li>
-                <li><a href="servicios.html"> SERVICIOS</a></li>
-                <li><a href="contactanos.html"> CONTACTANOS</a></li>
-            </ul>
-        </div>
-        <div class="header__shop">
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-    </header>    
-    <main class="productos-grid">
-        <a href="#repuestos" class="productos__repuestos">
-            <div>
-                <p>REPUESTOS</p>
+    <header>                 
+        <nav class="navbar navbar-expand-xxl navbar-dark bg-dark bg-gradient p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-3 fw-bold fst-italic logo" href="../index.html">MOTOCAR REPUESTOS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 link" aria-current="page" href="../paginas/motos.html">MOTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 text-white link" href="repuestos.html">REPUESTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 text-white link" href="../paginas/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6 text-white link" href="../paginas/contactanos.html">CONTACTANOS</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2 buscador" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                        <button class="btn btn-outline-light bg-primary boton" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-        </a>
-        <a href="#accesorios" class="productos__accesorios">
-            <div>
-                <p>ACCESORIOS</p>
-            </div>
-        </a>
-        <a href="#indumentaria" class="productos__indumentaria">
-            <div>
-                <p>INDUMENTARIA</p>
-            </div>
-        </a>
-        <a href="#nuevosingresos" class="productos__nuevos">
-            <div>
-                <p>NUEVOS INGRESOS</p>
-            </div>
-        </a>
-        <a href="#ofertas" class="productos__ofertas">
-            <div>
-                <p>OFERTAS</p>
-            </div>
-        </a>
-    </main>
-    <h2 id="nuevosingresos"class="text-center mt-5 mb-5">NUEVOS INGRESOS!</h2>
-            <div class="container">
+        </nav>
+    </header>
+    <div class="btn-group w-100" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">
+            <a class="fs-5 text-decoration-none text-light" href="#nuevosingresos">NUEVOS INGRESOS</a>
+        </button>
+        <button type="button" class="btn btn-primary">
+            <a class="fs-5 text-decoration-none text-light" href="#ofertas">OFERTAS</a>
+        </button>
+        <button type="button" class="btn btn-primary">
+            <a class="fs-5 text-decoration-none text-light" href="#repuestos">REPUESTOS</a>
+        </button>
+        <button type="button" class="btn btn-primary">
+            <a class="fs-5 text-decoration-none text-light" href="#accesorios">ACCESORIOS</a>
+        </button>
+        <button type="button" class="btn btn-primary">
+            <a class="fs-5 text-decoration-none text-light" href="#indumentaria">INDUMENTARIA</a>
+        </button>
+    </div>
+    <main>
+        <p id="nuevosingresos" class="w-50 mx-auto border-top border-3 text-center mt-5 mb-5 fs-1 fw-bold">NUEVOS INGRESOS!</p>
+            <div class="container-xxl">
                 <div class="row">
                     <div class="col-3">
                         <div class="card bg-dark text-white">
                             <img src="../assets/repuestos/productos/nuevosingresos/tuboescapeakrapoviccarbon.jpg" class="card-img-top" alt="akrapoviccarbon">
                             <div class="card-body">
                                 <h5 class="card-title">$94.999, 99</h5>
-                                <p class="card-text">Sistema completo de escape Akrapovic Carbon</p>
+                                <p class="card-text">Akrapovic Carbon</p>
                                 <a href="#" class="btn btn-primary">COMPRAR</a>
                             </div>
                         </div>
@@ -80,7 +84,7 @@
                             <img src="../assets/repuestos/productos/nuevosingresos/tuboescapefmfmegabomb.jpg" class="card-img-top" alt="fmfmegabomb">
                             <div class="card-body">
                                 <h5 class="card-title">$125.999, 99</h5>
-                                <p class="card-text">Sistema de escape completo FMF Megabomb</p>
+                                <p class="card-text">FMF Megabomb</p>
                                 <a href="#" class="btn btn-primary">COMPRAR</a>
                             </div>
                         </div>
@@ -100,15 +104,15 @@
                             <img src="../assets/repuestos/productos/nuevosingresos/crossprocaballetegrandprix.jpg" class="card-img-top" alt="caballetegp">
                             <div class="card-body">
                                 <h5 class="card-title">$11.579, 99</h5>
-                                <p class="card-text">Caballete CrossPro Grand Prix</p>
+                                <p class="card-text">CrossPro Grand Prix</p>
                                 <a href="#" class="btn btn-primary">COMPRAR</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <h2 id="ofertas" class="text-center mt-5 mb-5">OFERTAS!</h2>
-            <div class="container">
+        <p id="ofertas" class="w-50 mx-auto border-top border-3 text-center mt-5 mb-5 fs-1 fw-bold">OFERTAS!</p>
+            <div class="container-xxl">
                 <div class="row">
                     <div class="col-3">
                         <div class="card bg-dark text-white">
@@ -123,11 +127,11 @@
                     </div>
                     <div class="col-3">
                         <div class="card bg-dark text-white">
-                            <img src="../assets/repuestos/productos/ofertas/alpinestarsmototech5.jpg" class="card-img-top" alt="mototech5">
+                            <img src="../assets/repuestos/productos/ofertas/alpinestarsmototech5.jpg" class="card-img-top imagen" alt="mototech5">
                             <div class="card-body">
                                 <h5 class="card-title">$34.999, 99</h5>
                                 <p class="card-text text-decoration-line-through">$43.999, 99</p>
-                                <p class="card-text">Botas para motocross Alpinestars Moto Tech 5</p>
+                                <p class="card-text">Alpinestars Moto Tech 5</p>
                                 <a href="#" class="btn btn-primary">COMPRAR</a>
                             </div>
                         </div>
@@ -138,7 +142,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">$19.999, 99</h5>
                                 <p class="card-text text-decoration-line-through">$23.999, 99</p>
-                                <p class="card-text">Pantalon para motocross Troy Lee Desing GP Air Jet</p>
+                                <p class="card-text">Troy Lee Desing GP Air Jet</p>
                                 <a href="#" class="btn btn-primary">COMPRAR</a>
                             </div>
                         </div>
@@ -149,22 +153,22 @@
                             <div class="card-body">
                                 <h5 class="card-title">$42.999, 99</h5>
                                 <p class="card-text text-decoration-line-through">$49.999, 99</p>
-                                <p class="card-text">Cuello Alpinestars BNS Tech 2</p>
+                                <p class="card-text">Alpinestars BNS Tech 2</p>
                                 <a href="#" class="btn btn-primary">COMPRAR</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <h2>REPUESTOS</h2>
-            <div class="container">
+        <p id="repuestos" class="w-50 mx-auto border-top border-3 text-center mt-5 mb-5 fs-1 fw-bold">REPUESTOS</p>
+            <div class="container-xxl">
                 <div class="row">
                     <div class="col-3">
                         <div class="card bg-dark text-white">
                             <img src="../assets/repuestos/productos/bujias/championsparkplug.jpg" class="card-img-top" alt="championsparkplug">
                             <div class="card-body">
                                 <h5 class="card-title">$999, 99</h5>
-                                <p class="card-text">Bujía Champion Spark Plug</p>
+                                <p class="card-text">Champion Spark Plug</p>
                                 <a href="#" class="btn btn-primary">COMPRAR</a>
                             </div>
                         </div>
@@ -174,7 +178,7 @@
                             <img src="../assets/repuestos/productos/bujias/ngk 6689.jpg" class="card-img-top" alt="ngk6689">
                             <div class="card-body">
                                 <h5 class="card-title">$2.499, 99</h5>
-                                <p class="card-text">Bujía NGK 6689</p>
+                                <p class="card-text">NGK 6689</p>
                                 <a href="#" class="btn btn-primary">COMPRAR</a>
                             </div>
                         </div>
@@ -184,7 +188,7 @@
                             <img src="../assets/repuestos/productos/baterias/hiqagm12v.jpg" class="card-img-top" alt="hiqagm12v">
                             <div class="card-body">
                                 <h5 class="card-title">$11.899, 99</h5>
-                                <p class="card-text">Batería de moto Hi-Q AGM 12v</p>
+                                <p class="card-text">Hi-Q AGM 12v</p>
                                 <a href="#" class="btn btn-primary">COMPRAR</a>
                             </div>
                         </div>
@@ -194,266 +198,466 @@
                             <img src="../assets/repuestos/productos/baterias/mooseutility12v.jpg" class="card-img-top img-fluid" alt="moose12v">
                             <div class="card-body">
                                 <h5 class="card-title">$8.999, 99</h5>
-                                <p class="card-text">Batería de moto Moose Utility 12v</p>
+                                <p class="card-text">Moose Utility 12v</p>
                                 <a href="#" class="btn btn-primary">COMPRAR</a>
                             </div>
                         </div>
                     </div>
-                
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/cilindros/athenakitcilindro400cc.jpg" class="card-img-top" alt="cilindro400cc">
+                            <div class="card-body">
+                                <h5 class="card-title">$64.999, 99</h5>
+                                <p class="card-text">Athena Kit Cilindro 400cc</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/cilindros/athenakitcilindro490cc.jpg" class="card-img-top" alt="cilindro490cc">
+                            <div class="card-body">
+                                <h5 class="card-title">$93.499, 99</h5>
+                                <p class="card-text">Athena Kit Cilindro 490cc</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/filtros/moosefiltroaceitehondacrf250r.jpg" class="card-img-top" alt="filtromoose">
+                            <div class="card-body">
+                                <h5 class="card-title">$1.189, 99</h5>
+                                <p class="card-text">Moose Filtro de aceite Honda CRF 250R</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/filtros/twinairyamahayz450f.jpg" class="card-img-top img-fluid" alt="filtrotwinair">
+                            <div class="card-body">
+                                <h5 class="card-title">$2.699, 99</h5>
+                                <p class="card-text">Twin Air Filtro de aire Yamaha YZ 450F</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/frenos/ebcdelanterasy508g.jpg" class="card-img-top img-fluid" alt="mordazaebc">
+                            <div class="card-body">
+                                <h5 class="card-title">$3.699, 99</h5>
+                                <p class="card-text">EBC Mordaza de freno trasero</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/frenos/moosefrenotrasero.jpg" class="card-img-top img-fluid" alt="discofreno">
+                            <div class="card-body">
+                                <h5 class="card-title">$3.999, 99</h5>
+                                <p class="card-text">EBC Disco de freno delantero</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/amortiguadores/ohlinsstx46.jpg" class="card-img-top img-fluid" alt="amortiguador">
+                            <div class="card-body">
+                                <h5 class="card-title">$89.999, 00</h5>
+                                <p class="card-text">Ohlins STX 46</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/amortiguadores/ohlinsTTXGP.jpg" class="card-img-top img-fluid" alt="amortiguador2">
+                            <div class="card-body">
+                                <h5 class="card-title">$215.999, 99</h5>
+                                <p class="card-text">Ohlins TTX GP</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/juntas/moosekitjuntassuzukirmz250.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$4.499, 99</h5>
+                                <p class="card-text">Moose Kit Juntas estandar Suzuki RMZ250</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/juntas/moosejuntatapacrf450r.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$1.499, 99</h5>
+                                <p class="card-text">Moose Junta de Tapa Honda CRF 450R</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/transmision/kithonda.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$19.999, 99</h5>
+                                <p class="card-text">RK Kit Transmisión Honda</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/transmision/kityamaha.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$16.999, 99</h5>
+                                <p class="card-text">RK Kit transmisión Yamaha</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/retenes/mooseretenesaceiteyamaha.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$3.389, 99</h5>
+                                <p class="card-text">Moose Retenes aceite Yamaha</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/retenes/mooseretenesaceitekawa.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$3.299, 99</h5>
+                                <p class="card-text">Moose Retenes aceite Kawasaki</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>        
-            
-                
-                
-                   
-            
-                <!-- REPUESTOS -->
-                <!-- 
-                    
-                -->
-                <!-- 
-                    
-                -->
-                <!-- 
-                    
-                -->
-                <!-- 
-                    <img src="../assets/repuestos/productos/baterias/mooseutility12v.jpg" alt="fotodeproducto">
-                    <p>Moose Utility 12v</p>
-                    <p class="stock__precio">$8.999, 99</p>
-                -->
-                <!--
-                    <img src="../assets/repuestos/productos/cilindros/athenakitcilindro400cc.jpg" alt="fotodeproducto">
-                    <p>Athena Kit Cilindro 400cc</p>
-                    <p class="stock__precio">$64.999, 99</p>
-                -->   
-                <!--
-                    <img src="../assets/repuestos/productos/cilindros/athenakitcilindro490cc.jpg" alt="fotodeproducto">
-                    <p>Athena Kit Cilindro 490cc</p>
-                    <p class="stock__precio">$93.499, 99</p>
-                --> 
-                <!--
-                    <img src="../assets/repuestos/productos/filtros/moosefiltroaceitehondacrf250r.jpg" alt="fotodeproducto">
-                    <p>Moose Filtro de aceite Honda CRF 250R</p>
-                    <p class="stock__precio">$1.189, 99</p>
-                -->  
-                <!--
-                    <img src="../assets/repuestos/productos/filtros/twinairyamahayz450f.jpg" alt="fotodeproducto">
-                    <p>Twin Air Filtro de aire Yamaha YZ 450F</p>
-                    <p class="stock__precio">$2.699, 99</p>
-                --> 
-                <!--
-                    <img src="../assets/repuestos/productos/frenos/ebcdelanterasy508g.jpg" alt="fotodeproducto">
-                    <p>EBC Mordaza de freno trasero</p>
-                    <p class="stock__precio">$3.699, 99</p>
-                --> 
-                <!--
-                    <img src="../assets/repuestos/productos/frenos/ebcdelanterasy508g.jpg" alt="fotodeproducto">
-                    <p>EBC Mordaza de freno trasero</p>
-                    <p class="stock__precio">$3.699, 99</p>
-                --> 
-                <!--
-                    <img src="../assets/repuestos/productos/amortiguadores/ohlinsstx46.jpg" alt="fotodeproducto">
-                    <p>Ohlins STX 46</p>
-                    <p class="stock__precio">$89.999, 00</p>
-                --> 
-                <!--
-                    <img src="../assets/repuestos/productos/amortiguadores/ohlinsTTXGP.jpg" alt="fotodeproducto">
-                    <p>Ohlins TTX GP</p>
-                    <p class="stock__precio">$215.999, 99</p>
-                --> 
-                <!--
-                    <img src="../assets/repuestos/productos/juntas/moosekitjuntassuzukirmz250.jpg" alt="fotodeproducto">
-                    <p>Moose Kit Juntas estandar Suzuki RMZ250</p>
-                    <p class="stock__precio">$4.499, 99</p>
-                --> 
-                <!--
-                    <img src="../assets/repuestos/productos/juntas/moosejuntatapacrf450r.jpg" alt="fotodeproducto">
-                    <p>Moose Junta de Tapa Honda CRF 450R</p>
-                    <p class="stock__precio">$1.499, 99</p>
-                --> 
-                <!--
-                    <img src="../assets/repuestos/productos/transmision/kithonda.jpg" alt="fotodeproducto">
-                    <p>RK Kit Transmisión Honda</p>
-                    <p class="stock__precio">$19.999, 99</p>
-                --> 
-                <!--
-                    <img src="../assets/repuestos/productos/transmision/kityamaha.jpg" alt="fotodeproducto">
-                    <p>RK Kit transmisión Yamaha</p>
-                    <p class="stock__precio">$16.999, 99</p>
-                --> 
-                <!--
-                    <img src="../assets/repuestos/productos/retenes/mooseretenesaceiteyamaha.jpg" alt="fotodeproducto">
-                    <p>Moose Retenes aceite Yamaha</p>
-                    <p class="stock__precio">$3.389, 99</p>
-                --> 
-                <!--
-                    <img src="../assets/repuestos/productos/retenes/mooseretenesaceitekawa.jpg" alt="fotodeproducto">
-                    <p>Moose Retenes aceite Kawasaki</p>
-                    <p class="stock__precio">$3.299, 99</p>
-                --> 
-                    
-                
-        <article class="stock__contenedor">    
-            <h3 id="accesorios" class="stock__tipo">ACCESORIOS</h3>
-            <ul class="stock__lista">
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/cachas/cachascrf250.jpg" alt="fotodeproducto">
-                    <p>Kit Honda CRF 250r</p>
-                    <p class="stock__precio">$38.999, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/cachas/cachaswr450.jpg" alt="fotodeproducto">
-                    <p>Kit Yamaha WR450</p>
-                    <p class="stock__precio">$39.999, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/calcos/kitcalcosktm.jpg" alt="fotodeproducto">
-                    <p>Kit KTM SX250</p>
-                    <p class="stock__precio">$8.599, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/calcos/calcoskawasaki.jpg" alt="fotodeproducto">
-                    <p>Kit Kawasaki KX450</p>
-                    <p class="stock__precio">$9.999, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/manillares/onealmxgrip.jpg" alt="fotodeproducto">
-                    <p>O'neall MX Grip</p>
-                    <p class="stock__precio">$1.999, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/manillares/progrip788.jpg" alt="fotodeproducto">
-                    <p>ProGrip 788</p>
-                    <p class="stock__precio">$2.499, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/mantenimiento/motullimpiadorradiador.jpg" alt="fotodeproducto">
-                    <p>Limpiador de radiador Motul</p>
-                    <p class="stock__precio">$2.599, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/mantenimiento/aceitemotul300v2.jpg" alt="fotodeproducto">
-                    <p>Aceite Motul 300 v2</p>
-                    <p class="stock__precio">$3.999,99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/neumaticos/neumatico10010018.jpg" alt="fotodeproducto">
-                    <p>RMX 35 100-100-18</p>
-                    <p class="stock__precio">$12.199, 00</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/neumaticos/neumatico7010010.jpg" alt="fotodeproducto">
-                    <p>RMX 35 70-100-18</p>
-                    <p class="stock__precio">$8.799, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/manubrios/renthal613endurohigh.jpg" alt="fotodeproducto">
-                    <p>Renthal 613 Enduro High</p>
-                    <p class="stock__precio">$14.999, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/manubrios/renthalscrambler971.jpg" alt="fotodeproducto">
-                    <p>Renthal Scrambler 971</p>
-                    <p class="stock__precio">$8.999, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/portaequipaje/shadterra3647.jpg" alt="fotodeproducto">
-                    <p>Shad Terra tr36 y tr 47</p>
-                    <p class="stock__precio">$14.999, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/portaequipaje/shadterratr3748.jpg" alt="fotodeproducto">
-                    <p>Shad Terra 37 y tr 48</p>
-                    <p class="stock__precio">$17.999, 99</p>
-                </li>
-            </ul>
-        </article>
-        <article class="stock__contenedor">
-            <h3 id="indumentaria" class="stock__tipo">INDUMENTARIA</h3>
-            <ul class="stock__lista">
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/botas/acerbisxrock.jpg" alt="fotodeproducto">
-                    <p>Acerbis X-Rock</p>
-                    <p class="stock__precio">$41.999, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/botas/70gradossd.jpg" alt="fotodeproducto">
-                    <p>Seventy Degrees SD</p>
-                    <p class="stock__precio">$18.599, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/camperas/hdsidari.jpg" alt="fotodeproducto">
-                    <p>Harley Davidson Sidari</p>
-                    <p class="stock__precio">$59.999, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/camperas/rstmaverick.jpg" alt="fotodeproducto">
-                    <p>RST Maverick</p>
-                    <p class="stock__precio">$30.599, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/cascos/airohmrcross.jpg" alt="fotodeproducto">
-                    <p>Airoh Mr. Cross</p>
-                    <p class="stock__precio">$20.660, 00</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/cascos/scorpionvx.jpg" alt="fotodeproducto">
-                    <p>Scorpion VX</p>
-                    <p class="stock__precio">$41.999, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/guantes/alpinestarsgppro.png" alt="fotodeproducto">
-                    <p>Alpinestars GP Pro</p>
-                    <p class="stock__precio">$26.999, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/guantes/bmwsummer.jpg" alt="fotodeproducto">
-                    <p>BMW Summer</p>
-                    <p class="stock__precio">$12.299, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/mochilas/ogiomach3.jpg" alt="fotodeproducto">
-                    <p>Ogio Mach 3</p>
-                    <p class="stock__precio">$18.399, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/mochilas/ogiovr46.jpg" alt="fotodeproducto">
-                    <p>Ogio VR 46</p>
-                    <p class="stock__precio">$12.299, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/pantalones/beringmichigan.jpg" alt="fotodeproducto">
-                    <p>Bering Michigan</p>
-                    <p class="stock__precio">$60.999, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/pantalones/hevikterrain.jpg" alt="fotodeproducto">
-                    <p>Hevik Terrain</p>
-                    <p class="stock__precio">$27.799, 99</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/remeras/thorsectorchev.jpg" alt="fotodeproducto">
-                    <p>Thor Sector Chev</p>
-                    <p class="stock__precio">$4.999, 00</p>
-                </li>
-                <li class="stock__item">
-                    <img src="../assets/repuestos/productos/portaequipaje/shadterratr3748.jpg" alt="fotodeproducto">
-                    <p>Troy Lee Desing GP Air</p>
-                    <p class="stock__precio">$6.799, 99</p>
-                </li>
-            </ul>
-        </article>
-    </section>
-    <footer class="footer">
-        <h3>2022 - TODOS LOS DERECHOS RESERVADOS - MOTOCAR</h3>
-        <H4>SEGUINOS EN NUESTRAS REDES SOCIALES</H4>
-        <div class="footer__redes">
-            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp-square"></i></a>
-        </div>
-    </footer>
+        <p id="accesorios" class="w-50 mx-auto border-top border-3 text-center mt-5 mb-5 fs-1 fw-bold">ACCESORIOS</p>
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/cachas/cachascrf250.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$38.999, 99</h5>
+                                <p class="card-text">Kit Honda CRF 250r</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/cachas/cachaswr450.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$39.999, 99</h5>
+                                <p class="card-text">Kit Yamaha WR450</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/calcos/kitcalcosktm.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$8.599, 99</h5>
+                                <p class="card-text">Kit KTM SX250</p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/calcos/calcoskawasaki.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$9.999, 99</h5>
+                                <p class="card-text"><p>Kit Kawasaki KX450</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/manillares/onealmxgrip.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$1.999, 99</h5>
+                                <p class="card-text"><p>O'neall MX Grip</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/manillares/progrip788.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$2.499, 99</h5>
+                                <p class="card-text"><p>ProGrip 788</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/mantenimiento/aceitemotul300v2.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$3.999,99</h5>
+                                <p class="card-text"><p>Aceite Motul 300 v2</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/neumaticos/neumatico10010018.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$12.199, 00</h5>
+                                <p class="card-text"><p>RMX 35 100-100-18</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/neumaticos/neumatico7010010.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$8.799, 99</h5>
+                                <p class="card-text"><p>RMX 35 70-100-18</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/manubrios/renthal613endurohigh.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$14.999, 99</h5>
+                                <p class="card-text"><p>Renthal 613 Enduro High</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/manubrios/renthalscrambler971.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$8.999, 99</h5>
+                                <p class="card-text"><p>Renthal Scrambler 971</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/portaequipaje/shadterra3647.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$14.999, 99</h5>
+                                <p class="card-text"><p>Shad Terra tr36 y tr 47</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/portaequipaje/shadterratr3748.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$17.999, 99</h5>
+                                <p class="card-text"><p>Shad Terra 37 y tr 48</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        <p id="accesorios" class="w-50 mx-auto border-top border-3 text-center mt-5 mb-5 fs-1 fw-bold">INDUMENTARIA</p>     
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/botas/acerbisxrock.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$41.999, 99</h5>
+                                <p class="card-text"><p>Acerbis X-Rock</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/botas/70gradossd.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$18.599, 99</h5>
+                                <p class="card-text"><p>Seventy Degrees SD</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/camperas/hdsidari.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$59.999, 99</h5>
+                                <p class="card-text"><p>Harley Davidson Sidari</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/camperas/rstmaverick.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$30.599, 9</h5>
+                                <p class="card-text"><p>RST Maverick</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/cascos/airohmrcross.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$20.660, 00</h5>
+                                <p class="card-text"><p>Airoh Mr. Cross</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/cascos/scorpionvx.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$41.999, 99</h5>
+                                <p class="card-text"><p>Scorpion VX</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/guantes/alpinestarsgppro.png" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$26.999, 99</h5>
+                                <p class="card-text"><p>Alpinestars GP Pro</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/guantes/bmwsummer.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$12.299, 99</h5>
+                                <p class="card-text"><p>BMW Summer</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/mochilas/ogiomach3.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$18.399, 99</h5>
+                                <p class="card-text"><p>Ogio Mach 3</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/mochilas/ogiovr46.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$12.299, 99</h5>
+                                <p class="card-text"><p>Ogio VR 46</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/pantalones/beringmichigan.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$60.999, 99</h5>
+                                <p class="card-text"><p>Bering Michigan</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/pantalones/hevikterrain.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$27.799, 99</h5>
+                                <p class="card-text"><p>Hevik Terrain</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/remeras/thorsectorchev.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$4.999, 00</h5>
+                                <p class="card-text"><p>Thor Sector Chev</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-dark text-white">
+                            <img src="../assets/repuestos/productos/remeras/tldgpair.jpg" class="card-img-top img-fluid" alt="fotodeproducto">
+                            <div class="card-body">
+                                <h5 class="card-title">$6.799, 99</h5>
+                                <p class="card-text"><p>Troy Lee Desing GP Air</p></p>
+                                <a href="#" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="container-fluid mt-5 bg-dark bg-gradient text-white footer">
+                <div class="row d-flex align-items-center h-100">
+                    <h3 class="col-4 fs-5 fst-italic fw-bolder text-center mb-0">2022 - TODOS LOS DERECHOS RESERVADOS - MOTOCAR</h3>
+                    <H4 class="col-4 fs-5 fst-italic fw-bolder text-center mb-0">SEGUINOS EN NUESTRAS REDES SOCIALES</H4>
+                    <div class="col-4 d-flex justify-content-evenly">
+                        <a href="#" class="text-decoration-none text-white w-25"><i class="fa-brands fa-instagram-square fs-1"></i></a>
+                        <a href="#" class="text-decoration-none text-white w-25"><i class="fa-brands fa-facebook-square fs-1"></i></a>
+                        <a href="#" class="text-decoration-none text-white w-25"><i class="fa-brands fa-whatsapp-square fs-1"></i></a>
+                    </div>
+                </div>
+            </footer>
+
     <script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

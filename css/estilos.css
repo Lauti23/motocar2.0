@@ -2321,4 +2321,7 @@ body {
 .footer {
     height: 10rem;
 }
-
+.imagen {
+    height: 100%;
+    width: 100%;
+}
