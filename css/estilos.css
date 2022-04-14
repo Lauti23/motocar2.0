@@ -1,3 +1,4 @@
+/*
 * {
     margin: 0;
     padding: 0;
@@ -560,9 +561,10 @@ body {
 }
 
 /*MEDIA QUERIES*/
+/*
 @media screen and (max-width: 320px) {
     /*INDEX*/
-    .grid-mq {
+    /*.grid-mq {
         display: grid;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(3, auto);
@@ -654,7 +656,7 @@ body {
         width: 40%;
     }
     /*MOTOS*/
-    .mainmotos {
+    /*.mainmotos {
         grid-area: main;
         grid-template-rows: repeat(5, auto);
         column-gap: 0;
@@ -701,7 +703,7 @@ body {
         display: none;
     }
     /*REPUESTOS*/
-    .productos-grid {
+    /*.productos-grid {
         grid-template-rows: repeat(3, 1fr);
         height: auto;
     }
@@ -786,7 +788,7 @@ body {
         text-align: center;
     }
     /*SERVICIOS*/
-    .servicios__titulo1 {
+    /*.servicios__titulo1 {
         margin-top: 1em;
         font-size: 1em;
     }
@@ -823,7 +825,7 @@ body {
         height: 5em;
     }
     /*CONTACTANOS*/
-    .contacto {
+    /*.contacto {
         flex-direction: column;
         text-align: center;
         margin: 1em 0;
@@ -938,7 +940,7 @@ body {
         width: 40%;
     }
     /*MOTOS*/
-    .mainmotos {
+    /*.mainmotos {
         grid-area: main;
         grid-template-rows: repeat(5, auto);
         column-gap: 0;
@@ -985,7 +987,7 @@ body {
         display: none;
     }
     /*REPUESTOS*/
-    .productos-grid {
+    /*.productos-grid {
         grid-template-rows: repeat(3, 1fr);
         height: 10em;
     }
@@ -1071,7 +1073,7 @@ body {
         text-align: center;
     }
     /*SERVICIOS*/
-    .servicios__titulo1 {
+    /*.servicios__titulo1 {
         margin-top: 1em;
         font-size: 1em;
     }
@@ -1108,7 +1110,7 @@ body {
         height: 5em;
     }
     /*CONTACTANOS*/
-    .contacto {
+    /*.contacto {
         flex-direction: column;
         text-align: center;
         margin: 1em 0;
@@ -1223,7 +1225,7 @@ body {
         width: 40%;
     }
     /*MOTOS*/
-    .mainmotos {
+    /*.mainmotos {
         grid-area: main;
         grid-template-rows: repeat(5, auto);
         column-gap: 0;
@@ -1273,7 +1275,7 @@ body {
         display: none;
     }
     /*REPUESTOS*/
-    .productos-grid {
+    /*.productos-grid {
         grid-template-rows: repeat(3, 1fr);
         height: 20em;
     }
@@ -1361,7 +1363,7 @@ body {
         text-align: center;
     }
     /*SERVICIOS*/
-    .servicios__titulo1 {
+    /*.servicios__titulo1 {
         margin-top: 1em;
         font-size: 1.3em;
     }
@@ -1398,7 +1400,7 @@ body {
         height: 5em;
     }
     /*CONTACTANOS*/
-    .contacto {
+    /*.contacto {
         flex-direction: column;
         text-align: center;
         margin: 1em 0;
@@ -1510,7 +1512,7 @@ body {
         width: 40%;
     }
     /*MOTOS*/
-    .mainmotos {
+    /*.mainmotos {
         grid-template-rows: repeat(5, auto);
         column-gap: 0;
         row-gap: 0.2em;
@@ -1563,7 +1565,7 @@ body {
         align-self: center;
     }
     /*REPUESTOS*/
-    .productos-grid {
+    /*.productos-grid {
         grid-template-rows: repeat(3, 1fr);
         height: 30em;
     }
@@ -1651,7 +1653,7 @@ body {
         text-align: center;
     }
     /*SERVICIOS*/
-    .servicios__titulo1 {
+    /*.servicios__titulo1 {
         margin-top: 1em;
         font-size: 1.8em;
     }
@@ -1688,7 +1690,7 @@ body {
         height: 5em;
     }
     /*CONTACTANOS*/
-    .contacto {
+    /*.contacto {
         flex-direction: column;
         text-align: center;
         margin: 1em 0;
@@ -1797,7 +1799,7 @@ body {
         width: 40%;
     }
     /*MOTOS*/
-    .mainmotos {
+    /*.mainmotos {
         grid-template-rows: repeat(5, auto);
         column-gap: 0;
         row-gap: 0.2em;
@@ -1852,7 +1854,7 @@ body {
         align-self: center;
     }
     /*REPUESTOS*/
-    .productos-grid {
+    /*.productos-grid {
         grid-template-rows: repeat(3, 1fr);
         height: 30em;
     }
@@ -1942,7 +1944,7 @@ body {
         text-align: center;
     }
     /*SERVICIOS*/
-    .servicios__titulo1 {
+    /*.servicios__titulo1 {
         margin-top: 1em;
         font-size: 1.8em;
     }
@@ -1979,7 +1981,7 @@ body {
         height: 5em;
     }
     /*CONTACTANOS*/
-    .contacto {
+    /*.contacto {
         text-align: center;
         margin: 1em 0;
     }
@@ -2077,7 +2079,7 @@ body {
         width: 10%;
     }
     /*MOTOS*/
-    .mainmotos {
+    /*.mainmotos {
         grid-template-rows: repeat(5, auto);
         column-gap: 0;
         row-gap: 0.2em;
@@ -2131,7 +2133,7 @@ body {
         margin-left: 0.5em;
     }
     /*REPUESTOS*/
-    .productos-grid {
+    /*.productos-grid {
         grid-template-rows: repeat(3, 1fr);
         height: 30em;
     }
@@ -2221,7 +2223,7 @@ body {
         text-align: center;
     }
     /*SERVICIOS*/
-    .servicios__titulo1 {
+    /*.servicios__titulo1 {
         margin-top: 1em;
         font-size: 1.8em;
     }
@@ -2258,7 +2260,7 @@ body {
         height: 5em;
     }
     /*CONTACTANOS*/
-    .contacto {
+    /*.contacto {
         text-align: center;
         margin: 1em 0;
     }
@@ -2291,7 +2293,32 @@ body {
         height: 30em;
     }
 }
-
+*/
 
 
 /*BOOTSTRAP*/
+    /*INDEX*/
+.index {
+    background-image: url(../assets/index/moto01.jpg);
+    background-size: 100%;
+}
+.logo {
+    font-family: 'Open Sans', sans-serif;
+}
+.link {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 0.1em;
+    margin-left: 3em;
+}
+.buscador {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 0.1em;
+}
+.boton {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 0.1em;
+}
+.footer {
+    height: 10rem;
+}
+
