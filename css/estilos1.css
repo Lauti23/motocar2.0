@@ -209,30 +209,16 @@ body {
     width: 100%;
     overflow: hidden;
 }
-.slider {
-    width: 300%;
-    display: flex;
-    animation: slider 9s infinite alternate;
-}
-@keyframes slider {
-    0%{margin-left: 0%}
-    30%{margin-left: 0%;}
-    33.3%{margin-left: -100%;}
-    63.3%{margin-left: -100%;}
-    66.6%{margin-left: -200%;}
-    100%{margin-left: -200%;}
-}
 .section {
     width: 100%;
     background-color: white;
     margin-top: 7em;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, auto);
 }
 .section__marca {
-    grid-column: 3/11;
-    grid-row: 1;
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-style: italic;
@@ -242,25 +228,13 @@ body {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
-.section__moto {
-    margin-top: 6em;
-    grid-column: 3/8;
-    grid-row: 2;
-    height: 20em;
-}
 .section__modelo {
-    grid-column: 7/9;
-    grid-row: 2;
-    margin-top: 2em;
     font-family: 'Manrope', sans-serif;
     font-size: 1.5em;
     font-weight: 500;
     letter-spacing: 0.2em;
 }
 .section__precio {
-    grid-column: 7/9;
-    grid-row: 2;
-    margin-top: 4em;
     font-family: 'Manrope', sans-serif;
     font-size: 1.3em;
     letter-spacing: 1px;
@@ -307,6 +281,7 @@ body {
     grid-row: 1;
     background-image: url(../assets/repuestos/accesorios.jpg);
     border-left: 0.2em solid white;
+    border-right: 0.2em solid white;;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-style: italic;
@@ -442,8 +417,6 @@ body {
     text-decoration: line-through;
 }
 .servicios {
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
     height: 100%;
 }
 .servicios__titulo1 {
@@ -479,7 +452,7 @@ body {
     border: 2px solid black;
 }
 .servicios__fieldset legend {
-    margin-left: 5em;
+    margin: auto;
     font-size: 1.2em;
     padding: 0 1em;
 }
@@ -666,38 +639,8 @@ body {
     .mainmotos__kawasaki {
         background-size: 100% 100%;
     }
-    .section {
-        width: 100vw;
-        text-align: center;
-    }
     .section__marca {
-        grid-column: 2/12;
-        font-size: 1.2em;
-        text-align: center;
-    }
-    .section__modelo {
-        grid-column: 2/12;
-        grid-row: 2;
-        text-align: center;
-        margin-top: 1em;
-        font-size: 1.2em;
-
-    }
-    .section__precio {
-        grid-column: 2/12;
-        grid-row: 2;
-        text-align: center;
-        font-size: 1.2em;
-        margin-top: 2.2em;
-    }
-    .section__moto {
-        height: 10em;
-        grid-column: 2/12;
-        grid-row: 3;
-        margin-top: 1em;
-    }
-    .section__descripcion {
-        display: none;
+        font-size: 1em;
     }
     /*REPUESTOS*/
     .productos-grid {
@@ -719,6 +662,7 @@ body {
     .productos__accesorios {
         grid-column: 7/13;
         border-left: 0.05em solid white;
+        border-right: none;
         background-size: 100%;
     }
     .productos__accesorios p {
@@ -950,38 +894,8 @@ body {
     .mainmotos__kawasaki {
         background-size: 100% 100%;
     }
-    .section {
-        width: 100vw;
-        text-align: center;
-    }
     .section__marca {
-        grid-column: 2/12;
-        font-size: 1.6em;
-        text-align: center;
-    }
-    .section__modelo {
-        grid-column: 2/12;
-        grid-row: 2;
-        text-align: center;
-        margin-top: 1em;
         font-size: 1.2em;
-
-    }
-    .section__precio {
-        grid-column: 2/12;
-        grid-row: 2;
-        text-align: center;
-        font-size: 1.2em;
-        margin-top: 2.2em;
-    }
-    .section__moto {
-        height: 15em;
-        grid-column: 2/12;
-        grid-row: 3;
-        margin-top: 1em;
-    }
-    .section__descripcion {
-        display: none;
     }
     /*REPUESTOS*/
     .productos-grid {
@@ -1004,12 +918,14 @@ body {
         grid-column: 7/13;
         justify-content: flex-end;
         border-left: 0.05em solid white;
+        border-right: none;
         background-size: 100%;
     }
     .productos__accesorios p {
         font-size: 0.5em;
         margin-right: 0;
         text-shadow: 1px 1px 1px white;
+        border-right: none;
     }
     .productos__indumentaria {
         grid-row: 2;
@@ -1238,38 +1154,8 @@ body {
     .mainmotos__kawasaki {
         background-size: 100% 100%;
     }
-    .section {
-        width: 100vw;
-        text-align: center;
-    }
     .section__marca {
-        grid-column: 2/12;
-        font-size: 2em;
-        text-align: center;
-    }
-    .section__modelo {
-        grid-column: 2/12;
-        grid-row: 2;
-        text-align: center;
-        margin-top: 1em;
-        font-size: 1.5em;
-
-    }
-    .section__precio {
-        grid-column: 2/12;
-        grid-row: 2;
-        text-align: center;
-        font-size: 1.5em;
-        margin-top: 2.2em;
-    }
-    .section__moto {
-        width: 100%;
-        grid-column: 2/12;
-        grid-row: 3;
-        margin-top: 1em;
-    }
-    .section__descripcion {
-        display: none;
+        font-size: 1.4em;
     }
     /*REPUESTOS*/
     .productos-grid {
@@ -1292,6 +1178,7 @@ body {
         grid-column: 7/13;
         justify-content: flex-end;
         border-left: 0.05em solid white;
+        border-right: none;
         background-size: 100%;
     }
     .productos__accesorios p {
@@ -1524,42 +1411,8 @@ body {
     .mainmotos__kawasaki {
         background-size: 100% 100%;
     }
-    .section {
-        width: 100vw;
-        text-align: center;
-    }
     .section__marca {
-        grid-column: 2/12;
-        font-size: 2.5em;
-        text-align: center;
-    }
-    .section__modelo {
-        grid-column: 6/12;
-        grid-row: 2;
-        text-align: center;
-        margin-top: 1em;
-        font-size: 1.5em;
-    }
-    .section__precio {
-        grid-column: 6/12;
-        grid-row: 2;
-        text-align: center;
-        font-size: 1.5em;
-        margin-top: 2.2em;
-    }
-    .section__moto {
-        width: 100%;
-        height: auto;
-        grid-column: 2/6;
-        grid-row: 3;
-        margin-top: 1em;
-    }
-    .section__descripcion {
-        grid-column: 6/12;
-        grid-row: 3;
-        margin-top: 0;
-        margin-left: 0.5em;
-        align-self: center;
+        font-size: 1.8em;
     }
     /*REPUESTOS*/
     .productos-grid {
@@ -1582,6 +1435,7 @@ body {
         grid-column: 7/13;
         justify-content: flex-end;
         border-left: 0.05em solid white;
+        border-right: none;
         background-size: 100%;
     }
     .productos__accesorios p {
@@ -1811,49 +1665,13 @@ body {
     .mainmotos__kawasaki {
         background-size: 100% 100%;
     }
-    .section {
-        width: 100vw;
-        text-align: center;
-    }
-    .section__marca {
-        grid-column: 2/12;
-        font-size: 2.5em;
-        text-align: center;
-    }
-    .section__modelo {
-        grid-column: 6/12;
-        grid-row: 2;
-        text-align: start;
-        margin-top: 1em;
-        font-size: 1.5em;
-        margin-left: 0.5em;
-    }
-    .section__precio {
-        grid-column: 6/12;
-        grid-row: 2;
-        text-align: start;
-        font-size: 1.5em;
-        margin-top: 2.2em;
-        margin-left: 0.5em;
-    }
-    .section__moto {
-        width: 100%;
-        height: auto;
-        grid-column: 2/6;
-        grid-row: 3;
-        margin-top: 0;
-    }
-    .section__descripcion {
-        grid-column: 6/12;
-        grid-row: 3;
-        margin-top: 0;
-        margin-left: 0.5em;
-        align-self: center;
-    }
     /*REPUESTOS*/
     .productos-grid {
         grid-template-rows: repeat(3, 1fr);
         height: 30em;
+    }
+    .section__marca {
+        font-size: 2em;
     }
     .productos__repuestos {
         grid-column: 1/7;
@@ -1872,6 +1690,7 @@ body {
         grid-column: 7/13;
         justify-content: flex-end;
         border-left: 0.05em solid white;
+        border-right: none;
         background-size: 100%;
     }
     .productos__accesorios p {
@@ -2091,43 +1910,8 @@ body {
     .mainmotos__kawasaki {
         background-size: 100% 100%;
     }
-    .section {
-        width: 100vw;
-        text-align: center;
-    }
     .section__marca {
-        grid-column: 2/12;
-        font-size: 2.5em;
-        text-align: center;
-    }
-    .section__modelo {
-        grid-column: 7/12;
-        grid-row: 2;
-        text-align: start;
-        margin-top: 1em;
-        font-size: 1.5em;
-        margin-left: 0.5em;
-    }
-    .section__precio {
-        grid-column: 7/12;
-        grid-row: 2;
-        text-align: start;
-        font-size: 1.5em;
-        margin-top: 2.2em;
-        margin-left: 0.5em;
-    }
-    .section__moto {
-        width: 100%;
-        height: auto;
-        grid-column: 2/6;
-        grid-row: 3;
-        margin-top: 0;
-    }
-    .section__descripcion {
-        grid-column: 7/12;
-        grid-row: 3;
-        margin-top: 0.5em;
-        margin-left: 0.5em;
+        font-size: 2.2em;
     }
     /*REPUESTOS*/
     .productos-grid {
@@ -2151,6 +1935,7 @@ body {
         grid-column: 7/13;
         justify-content: flex-end;
         border-left: 0.05em solid white;
+        border-right: none;
         background-size: 100%;
     }
     .productos__accesorios p {
