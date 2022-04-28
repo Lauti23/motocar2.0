@@ -1,0 +1,84 @@
+.mainmotos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 11em);
+    column-gap: 0.1em;
+    row-gap: 0.2em;
+    background-color: $color-fondo;
+    & a {
+        text-decoration: none;
+        color: black;
+    }
+    & p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        font-size: 2.6em;
+        margin-left: 0.4em;
+        margin-top: 0.4em;
+        letter-spacing: 2px;
+    }
+    &__honda {
+        grid-column: 1/13;
+        grid-row: 1;
+        height: 100%;
+        background-image: url(../assets/motos/hondafondo.jpg) ;
+        background-size: 100% 100%;
+    }
+    &__kawasaki {
+        grid-column: 1/13;
+        grid-row: 2;
+        background-image: url(../assets/motos/kawasakifondo.jpg);
+        background-size: 100% 100%;
+    }
+    &__ktm {
+        grid-column: 1/13;
+        grid-row: 3;
+        background-image: url(../assets/motos/fondoktm.jpg);
+        background-size: 100% 100%;
+    }
+    &__suzuki {
+        grid-column: 1/13;
+        grid-row: 4;
+        background-image: url(../assets/motos/suzukifondo.jpg);
+        background-size: 100% 100%;
+    }
+    &__yamaha {
+        grid-column: 1/13;
+        grid-row: 5;
+        background-image: url(../assets/motos/fondoyamaha.jpg);
+        background-size: 100% 100%;
+        border-bottom: 0.2em solid black;
+    }
+}
+.section {
+    width: 100%;
+    background-color: white;
+    margin-top: 7em;
+    &__marca {
+        width: 80%;
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        font-size: 2.6em;
+        letter-spacing: 1em;
+        text-align: center;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    &__modelo {
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.5em;
+        font-weight: 500;
+        letter-spacing: 0.2em;
+    }
+    &__precio {
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.3em;
+        letter-spacing: 1px;
+    }
+}

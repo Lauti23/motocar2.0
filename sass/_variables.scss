@@ -7,3 +7,16 @@ $color-fondo: black;
 //Fuentes 
 $fuente-principal: 'Open Sans', sans-serif;
 $fuente-secundaria: 'Manrope', sans-serif;
+
+//Mapa 
+$estilos-repuestos: (
+    'fuente': 'Open Sans', sans-serif,
+    'grosor': 800,
+    'estilo': italic,
+    'size': 3em
+);
+//Mixin 
+@mixin inputs {
+    margin: 1em 10em;
+    height: 3em;
+}

@@ -1,0 +1,62 @@
+.servicios {
+    height: 100%;
+    &__titulo1 {
+        width: 100%;
+        margin-top: 2em;
+        text-align: center;
+        font-size: 2em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+    &__titulo2 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.7em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+    &__contenedor {
+        width: 100%;
+        margin: 3em 0;
+        display: flex;
+        justify-content: center;
+        font-family: 'Manrope', sans-serif;
+        text-transform: uppercase;
+    }
+    &__form {
+        width: 50%;
+    }
+    &__fieldset {
+        text-align: center;
+        border: 2px solid black;
+        & legend {
+            margin: auto;
+        font-size: 1.2em;
+        padding: 0 1em;
+        }
+        & p {
+            margin-top: 3em;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.1em;
+        }
+        & input {
+            @include inputs();
+        }
+        & textarea {
+            @include inputs();
+        }
+    }
+    &__boton {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        & input {
+            margin: 1em 0;
+            width: 60%;
+        }
+    }
+
+}

@@ -1,4 +1,8 @@
+@import '_margen';
 @import '_variables';
 @import '_header'; 
-@import 'mainindex';
+@import '_mainindex';
 @import '_footer';
+@import 'motos/_mainmotos';
+@import 'productos/_mainrepuestos';
+@import 'servicios/_mainservicios';
