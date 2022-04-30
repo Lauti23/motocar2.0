@@ -14,7 +14,7 @@
         margin: 0;
     }
     &__h4 {
-        @extend .footer_h3
+        @extend .footer__h3;
     }
     &__redes {
         width: 8%;
