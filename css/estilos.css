@@ -474,35 +474,43 @@
 }
 
 .servicios {
-  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.servicios__titulos {
+  width: 90%;
 }
 .servicios__titulo1 {
-  width: 100%;
-  margin-top: 2em;
+  width: 60%;
+  margin: 2em auto 0.2em auto;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-style: italic;
 }
 .servicios__titulo2 {
-  width: 100%;
+  width: 60%;
+  margin: 0 auto 2em auto;
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-style: italic;
 }
 .servicios__contenedor {
-  width: 100%;
-  margin: 3em 0;
+  width: 40%;
+  margin: 1em 0 5em 0;
   display: flex;
   justify-content: center;
   font-family: "Manrope", sans-serif;
   text-transform: uppercase;
 }
 .servicios__form {
-  width: 50%;
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 .servicios__fieldset {
   text-align: center;
@@ -519,13 +527,17 @@
   flex-direction: column;
   font-size: 1.1em;
 }
-.servicios__fieldset input {
-  margin: 1em 10em;
-  height: 3em;
+.servicios__fieldset p label {
+  margin-bottom: 0.7em;
 }
-.servicios__fieldset textarea {
-  margin: 1em 10em;
-  height: 3em;
+.servicios__fieldset p input {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.servicios__fieldset p textarea {
+  width: 60%;
+  margin: auto;
 }
 .servicios__boton {
   width: 100%;
@@ -535,6 +547,10 @@
 .servicios__boton input {
   margin: 1em 0;
   width: 60%;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border-color: black;
 }
 
 .contacto {
