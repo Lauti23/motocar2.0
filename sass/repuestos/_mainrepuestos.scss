@@ -102,13 +102,10 @@
     width: 100%;
     margin-top: 7em;
     &__contenedor {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(2, auto);
+        width: 90%;
+        margin: 3em auto;
     }
     &__tipo {
-        grid-column: 3/11;
-        grid-row: 1;
         margin-bottom: 0;
         font-family: $fuente-principal;
         font-weight: 800;
@@ -120,29 +117,38 @@
         border-bottom: 2px solid black;
         color: black;
     }
-    &__lista {
-        grid-column: 2/12;
-        grid-row: 2;
-        margin-top: 6em;
+    &__lista1 {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(1, auto);
+        list-style: none;
+        margin-top: 10em;
+        margin-bottom: 10em;
+        padding: 0;
+        & p {
+            margin: 0;
+        }
+    }
+    &__lista2 {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(4, auto);
+        row-gap: 5em;
+        column-gap: 1em;
+        margin-top: 7em;
         list-style: none;
         padding-left: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-between;
         margin-bottom: 6em;
         & p {
             margin-bottom: 0;
         }
     }
     &__item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin: auto;
         font-family: $fuente-secundaria;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        margin: 2em 3em;
+        text-align: center;
         & img {
             height: 12em;
         }

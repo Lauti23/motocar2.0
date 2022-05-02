@@ -319,6 +319,7 @@
   grid-column: 1/5;
   grid-row: 1;
   background-image: url(../assets/repuestos/repuestos.jpg);
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: italic;
   font-size: 3em;
@@ -338,6 +339,7 @@
   background-image: url(../assets/repuestos/accesorios.jpg);
   border-left: 0.2em solid white;
   border-right: 0.2em solid white;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: italic;
   font-size: 3em;
@@ -355,6 +357,7 @@
   grid-column: 9/13;
   grid-row: 1;
   background-image: url(../assets/repuestos/indumentaria.jpg);
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: italic;
   font-size: 3em;
@@ -372,6 +375,7 @@
   grid-column: 1/7;
   grid-row: 2;
   background-image: url(../assets/repuestos/nuevosingresos.jpg);
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: italic;
   font-size: 3em;
@@ -390,6 +394,7 @@
   grid-column: 7/13;
   grid-row: 2;
   background-image: url(../assets/repuestos/ofertas.jpg);
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: italic;
   font-size: 3em;
@@ -408,13 +413,10 @@
   margin-top: 7em;
 }
 .stock__contenedor {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, auto);
+  width: 90%;
+  margin: 3em auto;
 }
 .stock__tipo {
-  grid-column: 3/11;
-  grid-row: 1;
   margin-bottom: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
@@ -426,29 +428,38 @@
   border-bottom: 2px solid black;
   color: black;
 }
-.stock__lista {
-  grid-column: 2/12;
-  grid-row: 2;
-  margin-top: 6em;
+.stock__lista1 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(1, auto);
+  list-style: none;
+  margin-top: 10em;
+  margin-bottom: 10em;
+  padding: 0;
+}
+.stock__lista1 p {
+  margin: 0;
+}
+.stock__lista2 {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(4, auto);
+  row-gap: 5em;
+  column-gap: 1em;
+  margin-top: 7em;
   list-style: none;
   padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 6em;
 }
-.stock__lista p {
+.stock__lista2 p {
   margin-bottom: 0;
 }
 .stock__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
   font-family: "Manrope", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin: 2em 3em;
+  text-align: center;
 }
 .stock__item img {
   height: 12em;
