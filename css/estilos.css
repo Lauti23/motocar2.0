@@ -148,72 +148,48 @@
   color: white;
 }
 
-.main {
-  background-color: azure;
-  height: 170%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+.main__section {
+  width: 90%;
+  height: 300px;
+  margin: 150px auto;
+  display: flex;
+  justify-content: space-between;
 }
-.main__contenedor {
-  grid-column: 9/12;
-  grid-row: 2/4;
+.main__section .main__imagen1 {
+  width: 60%;
+  border-radius: 10px;
+  background-image: url(../assets/index/imagen1.jpg);
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
-.main__contenedor h2 {
+.main__section .main__imagen2 {
+  width: 60%;
+  border-radius: 10px;
+  background-image: url(../assets/index/imagen2.jpg);
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.main__article {
+  width: 40%;
+  margin-left: 5em;
+}
+.main__article .main__titulo {
+  color: black;
   font-family: "Open Sans", sans-serif;
-  font-size: 2.7em;
-  font-weight: 800;
+  font-size: 2.5em;
   font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+  text-shadow: 2px 2px 2px rgb(150, 150, 150);
 }
-.main__contenedor p {
+.main__article .main__texto {
+  color: black;
+  padding: 0 1em;
   font-family: "Manrope", sans-serif;
-  font-size: 1em;
-  line-height: 3;
   text-align: justify;
   letter-spacing: 2px;
-}
-.main__contenedor2 {
-  grid-column: 9/12;
-  grid-row: 4/6;
-}
-.main__contenedor2 h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.7em;
-  font-weight: 800;
-  font-style: italic;
-}
-.main__contenedor2 p {
-  font-family: "Manrope", sans-serif;
-  font-size: 1em;
-  line-height: 3;
-  text-align: justify;
-  letter-spacing: 2px;
-}
-
-.footer {
-  width: 100%;
-  height: 100px;
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.footer__h3, .footer__h4 {
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-  font-size: 1em;
-  margin: 0;
-}
-.footer__redes {
-  width: 8%;
-  display: flex;
-  justify-content: space-around;
-}
-.footer__redes i {
-  color: white;
-  font-size: 1.5em;
 }
 
 .mainmotos {
@@ -585,6 +561,32 @@
   margin-top: 2em;
   width: 70%;
   height: 80%;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__derechos, .footer__texto {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 1em;
+  margin: 0;
+}
+.footer__redes {
+  width: 8%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__redes i {
+  color: white;
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=estilos.css.map */
