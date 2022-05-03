@@ -21,7 +21,7 @@
   margin: 0;
 }
 .footer__redes {
-  width: 8%;
+  width: 20%;
   display: flex;
   justify-content: space-around;
 }
@@ -57,7 +57,7 @@
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2em;
   letter-spacing: 0.3em;
   color: white;
   margin-bottom: 0;
@@ -622,6 +622,80 @@
   margin-top: 1em;
   font-family: "Manrope", sans-serif;
   font-size: 1em;
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .header__logo {
+    width: 100%;
+  }
+  .header__logo h1 {
+    font-size: 1.5em;
+  }
+  .header__logo p {
+    font-size: 0.9em;
+  }
+  .header__nav {
+    width: 100%;
+  }
+  .header__lista a {
+    font-size: 0.65em;
+  }
+  .header__shop {
+    display: none;
+  }
+
+  .main__section {
+    width: 100%;
+    margin: 50px auto;
+  }
+  .main__section .main__imagen1 {
+    display: none;
+  }
+  .main__section .main__imagen2 {
+    display: none;
+  }
+  .main__section .main__article {
+    width: 100%;
+    margin: 0;
+  }
+  .main__section .main__article .main__titulo {
+    font-size: 1.5em;
+  }
+  .main__section .main__article .main__texto {
+    font-size: 0.8em;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+  .footer__derechos, .footer__texto {
+    font-size: 0.7em;
+  }
+  .footer__texto {
+    font-size: 0.7em;
+  }
+  .footer__redes i {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainmotos {
+    grid-template-rows: 4em;
+  }
+  .mainmotos p {
+    font-size: 1.5em;
+  }
+
+  .section {
+    margin-top: 2em;
+  }
+  .section__marca {
+    margin-top: 0.5em;
+    font-size: 1em;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
