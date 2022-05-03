@@ -24,6 +24,24 @@
             color: $color-fuente-primario;
             font-size: 1.5em;
         }
+        .insta {
+            transition: all .3s;
+            &:hover {
+                color: #C13584;
+            }
+        }
+        .face {
+            transition: all .3s;
+            &:hover {
+                color: #4267B2;
+            }
+        }
+        .wpp {
+            transition: all .3s;
+            &:hover {
+                color: #25D366;
+            }
+        }
     }
 }
 

@@ -29,6 +29,24 @@
   color: white;
   font-size: 1.5em;
 }
+.footer__redes .insta {
+  transition: all 0.3s;
+}
+.footer__redes .insta:hover {
+  color: #C13584;
+}
+.footer__redes .face {
+  transition: all 0.3s;
+}
+.footer__redes .face:hover {
+  color: #4267B2;
+}
+.footer__redes .wpp {
+  transition: all 0.3s;
+}
+.footer__redes .wpp:hover {
+  color: #25D366;
+}
 
 .header {
   background-color: black;
@@ -52,6 +70,10 @@
   color: white;
   text-decoration: none;
   margin-bottom: 0;
+  transition: all 0.3s;
+}
+.header__logo h1:hover {
+  color: orangered;
 }
 .header__logo p {
   font-family: "Open Sans", sans-serif;
@@ -61,6 +83,10 @@
   letter-spacing: 0.3em;
   color: white;
   margin-bottom: 0;
+  transition: all 0.3s;
+}
+.header__logo p:hover {
+  color: orangered;
 }
 .header__nav {
   width: 65%;
@@ -78,12 +104,13 @@
   padding: 0;
   margin-bottom: 0;
 }
-.header__lista a {
+.header__lista li a {
   color: white;
   text-decoration: none;
+  transition: all 0.3s;
 }
-.header__lista a:hover {
-  color: white;
+.header__lista li a:hover {
+  color: orangered;
 }
 .header__shop {
   background-color: black;
@@ -95,6 +122,10 @@
 }
 .header__shop a {
   color: white;
+  transition: all 0.3s;
+}
+.header__shop a:hover {
+  color: orangered;
 }
 
 .header {
@@ -239,6 +270,10 @@
   margin-left: 0.4em;
   margin-top: 0.4em;
   letter-spacing: 2px;
+  transition: all 0.3s;
+}
+.mainmotos p:hover {
+  color: orangered;
 }
 .mainmotos__honda {
   grid-column: 1/13;
@@ -333,6 +368,10 @@
   margin-bottom: 0;
   margin-right: 2em;
   color: black;
+  transition: all 0.3s;
+}
+.productos__repuestos p:hover {
+  color: orangered;
 }
 
 .productos__accesorios {
@@ -353,6 +392,10 @@
   margin-bottom: 0;
   margin-right: 2em;
   color: black;
+  transition: all 0.3s;
+}
+.productos__accesorios p:hover {
+  color: orangered;
 }
 
 .productos__indumentaria {
@@ -371,6 +414,10 @@
   margin-bottom: 0;
   margin-right: 2em;
   color: black;
+  transition: all 0.3s;
+}
+.productos__indumentaria p:hover {
+  color: orangered;
 }
 
 .productos__nuevos {
@@ -390,6 +437,10 @@
   margin-bottom: 0;
   margin-right: 2em;
   color: black;
+  transition: all 0.3s;
+}
+.productos__nuevos p:hover {
+  color: orangered;
 }
 
 .productos__ofertas {
@@ -408,6 +459,10 @@
   margin-bottom: 0;
   margin-right: 2em;
   color: black;
+  transition: all 0.3s;
+}
+.productos__ofertas p:hover {
+  color: orangered;
 }
 
 .stock {
@@ -680,8 +735,7 @@
   .footer__redes i {
     font-size: 1em;
   }
-}
-@media screen and (max-width: 320px) {
+
   .mainmotos {
     grid-template-rows: 4em;
   }
@@ -695,6 +749,153 @@
   .section__marca {
     margin-top: 0.5em;
     font-size: 1em;
+  }
+
+  .productos-grid {
+    grid-template-rows: repeat(5, 1fr);
+    height: 10em;
+  }
+  .productos-grid .productos__repuestos {
+    grid-column: 1/13;
+    font-size: 1.5em;
+    justify-content: center;
+  }
+  .productos-grid .productos__repuestos p {
+    margin: 0;
+    -webkit-text-stroke: 1px white;
+  }
+  .productos-grid .productos__accesorios {
+    grid-column: 1/13;
+    grid-row: 2;
+    border: none;
+    font-size: 1.5em;
+    justify-content: center;
+  }
+  .productos-grid .productos__accesorios p {
+    margin: 0;
+    -webkit-text-stroke: 1px white;
+  }
+  .productos-grid .productos__indumentaria {
+    grid-column: 1/13;
+    grid-row: 3;
+    font-size: 1.5em;
+    justify-content: center;
+  }
+  .productos-grid .productos__indumentaria p {
+    margin: 0;
+    -webkit-text-stroke: 1px white;
+  }
+  .productos-grid .productos__nuevos {
+    grid-column: 1/13;
+    grid-row: 4;
+    font-size: 1.5em;
+    justify-content: center;
+  }
+  .productos-grid .productos__nuevos p {
+    margin: 0;
+    -webkit-text-stroke: 1px white;
+  }
+  .productos-grid .productos__ofertas {
+    grid-column: 1/13;
+    grid-row: 5;
+    font-size: 1.5em;
+    justify-content: center;
+  }
+  .productos-grid .productos__ofertas p {
+    margin: 0;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .stock {
+    margin-top: 5em;
+  }
+  .stock__contenedor {
+    margin: 1em auto;
+  }
+  .stock__tipo {
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+  }
+  .stock__lista1 {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+    margin: 2em 0;
+    row-gap: 1em;
+  }
+  .stock__lista1 p {
+    font-size: 0.8em;
+  }
+  .stock__lista2 {
+    display: flex;
+    margin: 2em 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stock__lista2 p {
+    font-size: 0.8em;
+  }
+  .stock__item img {
+    height: 7em;
+  }
+
+  .servicios__titulo1 {
+    width: 100%;
+    margin: 1em 0 0.5em 0;
+    font-size: 0.8em;
+  }
+  .servicios__titulo2 {
+    width: 100%;
+    margin: 0 0 1em 0;
+    font-size: 0.8em;
+  }
+  .servicios__contenedor {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  .servicios__fieldset legend {
+    font-size: 0.65em;
+  }
+  .servicios__fieldset p {
+    margin-top: 1.5em;
+    font-size: 0.7em;
+  }
+  .servicios__boton input {
+    font-size: 0.8em;
+  }
+
+  .contacto {
+    margin-top: 1em;
+    margin-bottom: 5em;
+  }
+  .contacto__titulo {
+    font-size: 0.8em;
+  }
+  .contacto__contenedor {
+    width: 100%;
+  }
+  .contacto__lista {
+    margin-top: 1em;
+  }
+  .contacto__lista li {
+    font-size: 0.6em;
+  }
+  .contacto__lista li i {
+    margin-right: 0.2em;
+  }
+  .contacto__ubicacion {
+    width: 90%;
+  }
+  .contacto__ubicacion h2 {
+    margin-top: 2em;
+    font-size: 0.8em;
+  }
+  .contacto__ubicacion iframe {
+    margin-top: 1em;
+    height: 200px;
+  }
+  .contacto__ubicacion p {
+    font-size: 0.6em;
+    text-align: center;
   }
 }
 
