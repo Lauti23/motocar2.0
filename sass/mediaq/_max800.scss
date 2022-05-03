@@ -1,0 +1,237 @@
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    .header {
+        flex-wrap: wrap;
+        &__logo {
+            width: 25%;
+            & h1 {
+            font-size: 1.8em;
+            }
+            & p {
+                font-size: 1.1em;
+            }
+        }
+        &__nav {
+            width: 65%;
+        }
+        &__lista {
+            & a {
+                font-size: 0.9em;
+            }
+        }
+        &__shop {
+            width: 10%;
+        }
+    }
+    .main__section {
+        width: 100%;
+        margin: 100px auto;
+        justify-content: space-between;
+        height: auto;
+        margin: 30px auto 50px auto;
+        padding: 20px;
+        .main__imagen1 {
+            width: 60%;
+            height: 200px;
+            margin: auto;
+            background-size: cover;
+        }
+        .main__imagen2 {
+            width: 60%;
+            height: 200px;
+            margin: auto;
+        }
+        .main__article {
+            width: 40%;
+            margin: 0;
+            .main__titulo {
+                font-size: 1.5em;
+                margin-top: 0.3em;
+                margin-bottom: 0.5em;
+            }
+            .main__texto {
+                font-size: 0.8em;
+                padding: 0 1em;
+            }
+        }
+    }
+    .footer {
+        flex-wrap: wrap;
+        &__derechos {
+            font-size: 0.9em;
+        }
+        &__texto {
+            font-size: 0.9em;
+        }
+        &__redes i {
+            font-size: 1.2em;
+        }
+    }
+    .mainmotos {
+        grid-template-rows: repeat(5, 7em);
+        & p {
+            font-size: 2em;
+        }
+    }
+    .section {
+        margin-top: 2em;
+        &__marca {
+            margin-top: 1em;
+            font-size: 1.5em;
+        }
+    } 
+    .productos-grid {
+        grid-template-rows: repeat(5, 1fr);
+        height: 30em;
+        .productos__repuestos {
+            grid-column: 1/13;
+            font-size: 2em;
+            justify-content: center;
+            align-items: center;
+            & p {
+                margin: 0;
+                -webkit-text-stroke: 1px white;
+            }
+        }
+        .productos__accesorios {
+            grid-column: 1/13;
+            grid-row: 2;
+            border: none;
+            font-size: 2em;
+            justify-content: center;
+            align-items: center;
+            & p {
+                margin: 0;
+                -webkit-text-stroke: 1px white;
+            }
+        }
+        .productos__indumentaria {
+            grid-column: 1/13;
+            grid-row: 3;
+            font-size: 2em;
+            justify-content: center;
+            align-items: center;
+            & p {
+                margin: 0;
+                -webkit-text-stroke: 1px white;
+            }
+        }
+        .productos__nuevos {
+            grid-column: 1/13;
+            grid-row: 4;
+            font-size: 2em;
+            justify-content: center;
+            align-items: center;
+            & p {
+                margin: 0;
+                -webkit-text-stroke: 1px white;
+            }
+        }
+        .productos__ofertas {
+            grid-column: 1/13;
+            grid-row: 5;
+            font-size: 2em;
+            justify-content: center;
+            align-items: center;
+            & p {
+                margin: 0;
+                -webkit-text-stroke: 1px white;
+            }
+        }
+    }
+    .stock {
+        margin-top: 5em;
+        &__contenedor {
+            margin: 1em auto;
+        }
+        &__tipo {
+            font-size: 2em;
+            letter-spacing: 0.2em;
+        }
+        &__lista1 {
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(4, auto);
+            margin: 2em 0;
+            row-gap: 1em;
+            & p {
+                font-size: 0.9em;
+            }
+        }
+        &__lista2 {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            margin: 2em 0;
+            & p {
+                font-size: 0.9em;
+            }
+        }
+        &__item img {
+            height: 9em;
+        }
+    }
+    .servicios {
+        &__titulo1 {
+            width: 100%;
+            margin: 1em 0 0.5em 0;
+            font-size: 1em;
+        }
+        &__titulo2 {
+            width: 100%;
+            margin: 0 0 1em 0;
+            font-size: 1em;
+        }
+        &__contenedor {
+            width: 100%;
+            margin-bottom: 3em;
+        }
+        &__fieldset {
+            & legend {
+                font-size: 1em;
+                margin-bottom: 2em;
+            }
+            & p {
+                margin-top: 1.5em;
+                font-size: 0.9em;
+            }
+        }
+        &__boton {
+            & input {
+                font-size: 0.9em;
+            }
+        }
+    }
+    .contacto {
+        margin-top: 1em;
+        margin-bottom: 5em;
+        &__titulo {
+            font-size: 1em;
+        }
+        &__contenedor {
+            width: 100%;
+        }
+        &__lista {
+            margin-top: 1em;
+            & li {
+                font-size: 1em;
+                & i {
+                margin-right: 0.2em;
+                }
+            }
+            
+        }
+        &__ubicacion {
+            width: 90%;
+            & h2 {
+                margin-top: 2em;
+                font-size: 1em;
+            }
+            & iframe {
+                margin-top: 1em;
+                height: 400px;
+            }
+            & p {
+                font-size: 0.9em;
+                text-align: center;
+            }
+        }
+    }
+}
