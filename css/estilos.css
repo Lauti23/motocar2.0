@@ -898,5 +898,238 @@
     text-align: center;
   }
 }
+@media screen and (min-width: 321px) and (max-width: 500px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .header__logo {
+    width: 100%;
+  }
+  .header__logo h1 {
+    font-size: 1.7em;
+  }
+  .header__logo p {
+    font-size: 1em;
+  }
+  .header__nav {
+    width: 100%;
+  }
+  .header__lista a {
+    font-size: 0.8em;
+  }
+  .header__shop {
+    display: none;
+  }
+
+  .main__section {
+    width: 100%;
+    margin: 100px auto;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin: 10px auto;
+  }
+  .main__section .main__imagen1 {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+  }
+  .main__section .main__imagen2 {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+  }
+  .main__section .main__article {
+    width: 100%;
+    margin: 0;
+  }
+  .main__section .main__article .main__titulo {
+    font-size: 1.5em;
+    margin-top: 0.3em;
+  }
+  .main__section .main__article .main__texto {
+    font-size: 0.8em;
+    padding: 0 2em;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+  .footer__derechos, .footer__texto {
+    font-size: 0.8em;
+  }
+  .footer__texto {
+    font-size: 0.8em;
+  }
+  .footer__redes i {
+    font-size: 1em;
+  }
+
+  .mainmotos {
+    grid-template-rows: repeat(5, 5em);
+  }
+  .mainmotos p {
+    font-size: 1.7em;
+  }
+
+  .section {
+    margin-top: 2em;
+  }
+  .section__marca {
+    margin-top: 1em;
+    font-size: 1.2em;
+  }
+
+  .productos-grid {
+    grid-template-rows: repeat(5, 1fr);
+    height: 20em;
+  }
+  .productos-grid .productos__repuestos {
+    grid-column: 1/13;
+    font-size: 1.8em;
+    justify-content: center;
+    align-items: center;
+  }
+  .productos-grid .productos__repuestos p {
+    margin: 0;
+    -webkit-text-stroke: 1px white;
+  }
+  .productos-grid .productos__accesorios {
+    grid-column: 1/13;
+    grid-row: 2;
+    border: none;
+    font-size: 1.8em;
+    justify-content: center;
+    align-items: center;
+  }
+  .productos-grid .productos__accesorios p {
+    margin: 0;
+    -webkit-text-stroke: 1px white;
+  }
+  .productos-grid .productos__indumentaria {
+    grid-column: 1/13;
+    grid-row: 3;
+    font-size: 1.8em;
+    justify-content: center;
+    align-items: center;
+  }
+  .productos-grid .productos__indumentaria p {
+    margin: 0;
+    -webkit-text-stroke: 1px white;
+  }
+  .productos-grid .productos__nuevos {
+    grid-column: 1/13;
+    grid-row: 4;
+    font-size: 1.8em;
+    justify-content: center;
+    align-items: center;
+  }
+  .productos-grid .productos__nuevos p {
+    margin: 0;
+    -webkit-text-stroke: 1px white;
+  }
+  .productos-grid .productos__ofertas {
+    grid-column: 1/13;
+    grid-row: 5;
+    font-size: 1.8em;
+    justify-content: center;
+    align-items: center;
+  }
+  .productos-grid .productos__ofertas p {
+    margin: 0;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .stock {
+    margin-top: 5em;
+  }
+  .stock__contenedor {
+    margin: 1em auto;
+  }
+  .stock__tipo {
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+  }
+  .stock__lista1 {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    margin: 2em 0;
+    row-gap: 1em;
+  }
+  .stock__lista1 p {
+    font-size: 0.8em;
+  }
+  .stock__lista2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 2em 0;
+  }
+  .stock__lista2 p {
+    font-size: 0.8em;
+  }
+  .stock__item img {
+    height: 7em;
+  }
+
+  .servicios__titulo1 {
+    width: 100%;
+    margin: 1em 0 0.5em 0;
+    font-size: 0.9em;
+  }
+  .servicios__titulo2 {
+    width: 100%;
+    margin: 0 0 1em 0;
+    font-size: 0.9em;
+  }
+  .servicios__contenedor {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  .servicios__fieldset legend {
+    font-size: 0.8em;
+  }
+  .servicios__fieldset p {
+    margin-top: 1.5em;
+    font-size: 0.75em;
+  }
+  .servicios__boton input {
+    font-size: 0.9em;
+  }
+
+  .contacto {
+    margin-top: 1em;
+    margin-bottom: 5em;
+  }
+  .contacto__titulo {
+    font-size: 0.9em;
+  }
+  .contacto__contenedor {
+    width: 100%;
+  }
+  .contacto__lista {
+    margin-top: 1em;
+  }
+  .contacto__lista li {
+    font-size: 0.8em;
+  }
+  .contacto__lista li i {
+    margin-right: 0.2em;
+  }
+  .contacto__ubicacion {
+    width: 90%;
+  }
+  .contacto__ubicacion h2 {
+    margin-top: 2em;
+    font-size: 0.9em;
+  }
+  .contacto__ubicacion iframe {
+    margin-top: 1em;
+    height: 300px;
+  }
+  .contacto__ubicacion p {
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
