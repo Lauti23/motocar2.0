@@ -517,9 +517,17 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
+  transition: all 0.2s;
+}
+.stock__item a {
+  text-decoration: none;
+  color: black;
 }
 .stock__item img {
   height: 12em;
+}
+.stock__item:hover {
+  transform: scale(1.2, 1.2);
 }
 .stock__precio {
   font-weight: bold;
