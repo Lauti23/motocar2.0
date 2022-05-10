@@ -906,7 +906,7 @@
     text-align: center;
   }
 }
-@media screen and (min-width: 321px) and (max-width: 640px) {
+@media screen and (min-width: 471px) and (max-width: 640px) {
   .header {
     flex-wrap: wrap;
   }
