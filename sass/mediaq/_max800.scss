@@ -87,6 +87,7 @@
             font-size: 2em;
             justify-content: center;
             align-items: center;
+            background-image: url(../../assets/repuestos/repuestos1.jpg);
             & p {
                 margin: 0;
                 -webkit-text-stroke: 1px white;
@@ -99,6 +100,7 @@
             font-size: 2em;
             justify-content: center;
             align-items: center;
+            background-image: url(../../assets/repuestos/accesorios1.jpg);
             & p {
                 margin: 0;
                 -webkit-text-stroke: 1px white;
@@ -110,6 +112,7 @@
             font-size: 2em;
             justify-content: center;
             align-items: center;
+            background-image: url(../../assets/repuestos/indumentaria1.jpg);
             & p {
                 margin: 0;
                 -webkit-text-stroke: 1px white;
@@ -180,7 +183,7 @@
             font-size: 1em;
         }
         &__contenedor {
-            width: 100%;
+            width: 80%;
             margin-bottom: 3em;
         }
         &__fieldset {

@@ -1,13 +1,13 @@
-@media screen and (min-width: 1146px) and (max-width: 1500px) {
+@media screen and (min-width: 801px) and (max-width: 1145px) {
     .header {
         flex-wrap: wrap;
         &__logo {
             width: 25%;
             & h1 {
-            font-size: 2em;
+            font-size: 1.8em;
             }
             & p {
-                font-size: 1.2em;
+                font-size: 1.1em;
             }
         }
         &__nav {
@@ -15,7 +15,7 @@
         }
         &__lista {
             & a {
-                font-size: 1em;
+                font-size: 0.9em;
             }
         }
         &__shop {
@@ -67,16 +67,16 @@
         }
     }
     .mainmotos {
-        grid-template-rows: repeat(5, 9em);
+        grid-template-rows: repeat(5, 7em);
         & p {
-            font-size: 2.3em;
+            font-size: 2em;
         }
     }
     .section {
         margin-top: 2em;
         &__marca {
-            margin-top: 2em;
-            font-size: 2em;
+            margin-top: 1em;
+            font-size: 1.5em;
         }
     } 
     .productos-grid {
@@ -88,11 +88,12 @@
         .productos__repuestos {
             grid-column: 1/5;
             grid-row: 1;
-            font-size: 2.5em;
+            font-size: 2em;
             justify-content: flex-end;
             align-items: flex-end;
             & p {
-                margin-right: 1em;
+                margin-right: 0.5em;
+                -webkit-text-stroke: 1px white;
                 
             }
         }
@@ -101,44 +102,48 @@
             grid-row: 1;
             border-left: 0.2em solid white;
             border-right: 0.2em solid white;
-            font-size: 2.5em;
+            font-size: 2em;
             justify-content: flex-end;
             align-items: flex-end;
             & p {
-                margin-right: 1em;
+                margin-right: 0.5em;
+                -webkit-text-stroke: 1px white;
                 
             }
         }
         .productos__indumentaria {
             grid-column: 9/13;
             grid-row: 1;
-            font-size: 2.5em;
+            font-size: 2em;
             justify-content: flex-end;
             align-items: flex-end;
             & p {
-                margin-right: 1em;
+                margin-right: 0.5em;
+                -webkit-text-stroke: 1px white;
                 
             }
         }
         .productos__nuevos {
             grid-column: 1/7;
             grid-row: 2;
-            font-size: 2.5em;
+            font-size: 2em;
             justify-content: flex-end;
             align-items: flex-end;
             & p {
-                margin-right: 1em;
+                margin-right: 0.5em;
+                -webkit-text-stroke: 1px white;
                 
             }
         }
         .productos__ofertas {
             grid-column: 7/13;
             grid-row: 2;
-            font-size: 2.5em;
+            font-size: 2em;
             justify-content: flex-end;
             align-items: flex-end;
             & p {
-                margin-right: 1em;
+                margin-right: 0.5em;
+                -webkit-text-stroke: 1px white;
                 
             }
         }
@@ -149,67 +154,66 @@
             margin: 1em auto;
         }
         &__tipo {
-            font-size: 2.3em;
+            font-size: 2em;
             letter-spacing: 0.2em;
         }
         &__lista1 {
-            grid-template-columns: repeat(4, auto);
-            grid-template-rows: repeat(1, auto);
-            margin: 8em 0;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(4, auto);
+            margin: 2em 0;
             row-gap: 1em;
             & p {
-                font-size: 1em;
+                font-size: 0.9em;
             }
         }
         &__lista2 {
             display: grid;
-            grid-template-columns: repeat(5, auto);
-            grid-template-rows: repeat(4, auto);
-            margin: 8em 0;
+            grid-template-columns: repeat(2, auto);
+            margin: 2em 0;
             & p {
-                font-size: 1em;
+                font-size: 0.9em;
             }
         }
         &__item img {
-            height: 10em;
+            height: 9em;
         }
     }
     .servicios {
         &__titulo1 {
-            width: 70%;
-            margin: 1em auto 0.5em auto;
-            font-size: 1.3em;
+            width: 100%;
+            margin: 1em 0 0.5em 0;
+            font-size: 1em;
         }
         &__titulo2 {
-            width: 70%;
-            margin: 0 auto 1em auto;
-            font-size: 1.3em;
+            width: 100%;
+            margin: 0 0 1em 0;
+            font-size: 1em;
         }
         &__contenedor {
-            width: 50%;
+            width: 100%;
             margin-bottom: 3em;
         }
         &__fieldset {
             & legend {
-                font-size: 1.1em;
+                font-size: 1em;
                 margin-bottom: 2em;
             }
             & p {
-                margin-top: 2em;
-                font-size: 1em;
+                margin-top: 1.5em;
+                font-size: 0.9em;
             }
         }
         &__boton {
             & input {
-                font-size: 1em;
+                font-size: 0.9em;
             }
         }
     }
     .contacto {
-        margin-top: 2em;
-        margin-bottom: 8em;
+        margin-top: 1em;
+        margin-bottom: 5em;
         &__titulo {
-            font-size: 1.2em;
+            font-size: 1em;
         }
         &__contenedor {
             width: 100%;
@@ -225,17 +229,17 @@
             
         }
         &__ubicacion {
-            width: 60%;
+            width: 90%;
             & h2 {
                 margin-top: 2em;
-                font-size: 1.2em;
+                font-size: 1em;
             }
             & iframe {
                 margin-top: 1em;
-                height: 500px;
+                height: 400px;
             }
             & p {
-                font-size: 1em;
+                font-size: 0.9em;
                 text-align: center;
             }
         }
