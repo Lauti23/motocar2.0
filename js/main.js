@@ -22,19 +22,31 @@ class Compra {
 
 }
 
+const usuarios = ["Victoria", "Tony", "Pablo", "Eric", "Eugenia"];
+    
+let nuevoUsuario = "";
 
+do {
+    if (nuevoUsuario != "") {
+        alert("El nombre de usuario ya éxiste, ingrese uno nuevo");
+    }
+    nuevoUsuario = prompt("Ingrese nuevo nombre de usuario");
+
+} while (usuarios.includes(nuevoUsuario));
+
+alert("El nombre de usuario "+nuevoUsuario+" se creó con éxito!");
 
 const pedidoMoto = () => {
     let marca;
     let precio = 0;
     let necesidad;
-
-    nombre = prompt("Bienvenido a Motocar Repuestos, ingresa tu nombre.");
+    
+    // nombre = prompt("Bienvenido a Motocar Repuestos, ingresa tu nombre.");
     
     
     
     while (necesidad == 0 || necesidad > 2 || !necesidad) {
-        necesidad = parseInt(prompt("Hola "+ nombre +", en que te podemos ayudar?\nColoca '1' para ver las motocross o '2' para solicitar un turno en el taller"));
+        necesidad = parseInt(prompt("Hola "+ nuevoUsuario +", en que te podemos ayudar?\nColoca '1' para ver las motocross o '2' para solicitar un turno en el taller"));
     }
     if (necesidad == 1){
         marca = parseInt(prompt("¿En qué marca estas interesado?\nColoca el número de la marca que quieras ver\n1 - Honda\n2 - Kawasaki\n3 - KTM\n4 - Suzuki\n5 - Yamaha"));
@@ -60,6 +72,7 @@ const pedidoMoto = () => {
                 precio = 1198870
                 break;
         }
+        
     } else if (necesidad == 2) {
         for (let turno = 1; turno <= 10; turno++) {
         
@@ -73,8 +86,9 @@ const pedidoMoto = () => {
     const pedido = new Compra(nombre, marca, precio);
     return pedido;
 }
+
 const compra = pedidoMoto();
-compra.calcularIva();
-compra.calcularSubTotal();
-compra.calcularTotal();
-alert ("Detalle de la compra:\n- "+compra.marca+": $"+compra.precio+"\n- IVA 21%: $"+compra.calcularIva()+"\n- Costo de envio: $"+compra.envio+"\n\nTOTAL: $"+ compra.total);
+        compra.calcularIva();
+        compra.calcularSubTotal();
+        compra.calcularTotal();
+        alert ("Detalle de la compra:\n- "+compra.marca+": $"+compra.precio+"\n- IVA 21%: $"+compra.calcularIva()+"\n- Costo de envio: $"+compra.envio+"\n\nTOTAL: $"+ compra.total);
