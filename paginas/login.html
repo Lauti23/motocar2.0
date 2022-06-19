@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="contacto, contactanos, telefono, whatsapp, email, mail, instagram, facebook, redes sociales, rio gallegos, entre rios, mapa, ubicacion">
-    <meta name="description" content="Contactate con Motocar Repuestos mediante las redes sociales acá mencionadas o sino presentate en nuestro local físico">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <!--Fuente "Manrope"-->
+    <meta name="keywords" content="motocar, repuestos, motos, motocicletas, offroad, accesorios, indumentaria, servicios, reparación, taller, empresa, honda, kawasaki, ktm, suzuki, yamaha, rio gallegos, argentina"> 
+    <meta name="description" content="Motocar Repuestos es una empresa dedicada a la venta de motos, repuestos e indumentaria, también a la reparacion de motocross y demás ciclomotores.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,364;1,800&display=swap" rel="stylesheet">
@@ -16,7 +14,7 @@
     <!--Font-Awesome-->
     <script src="https://kit.fontawesome.com/403dba6bea.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Motocar Repuestos - Contacto</title>
+    <title>Motocar Repuestos - Inicia Sesión</title>
 </head>
 <body>
     <header class="header">
@@ -37,32 +35,24 @@
             <a class="header__iconos-carrito" href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </header>
-    <main class="contacto">
-        <h2 class="contacto__titulo">Contactanos mediante nuestras redes sociales:</h2>
-        <div class="contacto__contenedor">
-            <ul class="contacto__lista">
-                <li>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <a href="#">+54 2966 346013</a>
-                </li>
-                <li>
-                    <i class="fa-brands fa-facebook"></i>
-                    <a href="#">MotoCar Repuestos</a>
-                </li>
-                <li>
-                    <i class="fa-brands fa-instagram"></i>
-                    <a href="#">motocar.repuestos</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="#">motocarepuestos@gmail.com</a>
-                </li>
-            </ul>
-        </div>
-        <div class="contacto__ubicacion">
-            <h2>Encontranos en la esquina Entre Rios y Mariano Moreno</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.0816941261187!2d-69.22836248375057!3d-51.621712649149316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdb6f955bc58df4f%3A0xadd8e4d6d1ddce71!2sEntre%20R%C3%ADos%20374%2C%20Z9400ITH%20R%C3%ADo%20Gallegos%2C%20Santa%20Cruz!5e0!3m2!1ses-419!2sar!4v1651525458821!5m2!1ses-419!2sar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Horario de atención de Lunes a Viernes de 09:00 a 12:00 y 15:00 a 20:00 horas</p>
+    <main class="login">
+        <div class="login__contenedor">
+            <h2 class="login__h2">INICIA SESIÓN</h2>
+            <form  class="login__form" method="post">
+                <fieldset class="login__fieldset">
+                    <p>
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" name="usuario" placeholder="Usuario...">
+                    </p>
+                    <p>
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="password" name="contraseña" placeholder="Contraseña...">
+                    </p>
+                    <div class="login__boton">
+                        <button class="login__btn" type="submit">Iniciar sesión</button>
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </main>
     <footer class="footer">
@@ -74,5 +64,6 @@
             <a href="#"><i class="fa-brands fa-whatsapp-square wpp"></i></a>
         </div>
     </footer>
+    
 </body>
 </html>

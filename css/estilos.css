@@ -112,19 +112,20 @@
 .header__lista li a:hover {
   color: orangered;
 }
-.header__shop {
+.header__iconos {
   background-color: black;
   width: 10%;
-  text-align: center;
-  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   font-size: 1.5em;
   color: white;
 }
-.header__shop a {
+.header__iconos a {
   color: white;
   transition: all 0.3s;
 }
-.header__shop a:hover {
+.header__iconos a:hover {
   color: orangered;
 }
 
@@ -685,6 +686,196 @@
   margin-top: 1em;
   font-family: "Manrope", sans-serif;
   font-size: 1em;
+}
+
+.carrito__titulo {
+  width: 80%;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 1em;
+  background-color: black;
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carrito__h2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+}
+.carrito__vacio {
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  color: white;
+}
+.carrito__item {
+  width: 80%;
+  height: 6em;
+  border: 1px black solid;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+}
+.carrito__item .carrito__elemento {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.carrito__item .carrito__elemento .carrito__imagen {
+  width: 10%;
+  margin-left: 15px;
+}
+.carrito__item .carrito__elemento .carrito__imagen-foto {
+  width: 90%;
+}
+.carrito__item .carrito__elemento .carrito__producto {
+  width: 50%;
+  font-family: "Open Sans", sans-serif;
+  margin: auto;
+  padding: 0 2em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.carrito__item .carrito__elemento .carrito__cantidad {
+  width: 20%;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  background-color: rgb(202, 199, 199);
+}
+.carrito__item .carrito__elemento .carrito__cantidad-restar {
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 5px;
+}
+.carrito__item .carrito__elemento .carrito__cantidad-numero {
+  width: 60%;
+  text-align: center;
+}
+.carrito__item .carrito__elemento .carrito__cantidad-sumar {
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
+  background-color: green;
+  border-radius: 5px;
+}
+.carrito__item .carrito__elemento .carrito__precio {
+  width: 20%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.carrito__final {
+  width: 80%;
+  height: 5em;
+  margin: 2em auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 15px;
+}
+.carrito__final .carrito__resumen {
+  display: flex;
+  width: 40%;
+}
+.carrito__final .carrito__resumen .carrito__total {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.carrito__final .carrito__resumen .carrito__total p {
+  width: 50%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.carrito__pagar {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.carrito__pagar .carrito__boton {
+  width: 20%;
+  height: 3em;
+  border: green solid 1px;
+  border-radius: 10px;
+  background-color: green;
+}
+.carrito__pagar .carrito__boton P {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.login__contenedor {
+  width: 80%;
+  margin: 3em auto;
+}
+.login__contenedor .login__h2 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  font-style: italic;
+}
+.login__contenedor .login__form {
+  margin: 2em 0;
+  font-family: "Manrope", sans-serif;
+}
+.login__contenedor .login__form .login__fieldset {
+  width: 40%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login__contenedor .login__form .login__fieldset p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+  margin: 1em 0;
+}
+.login__contenedor .login__form .login__fieldset p label {
+  font-size: 1.2em;
+}
+.login__contenedor .login__form .login__fieldset p input {
+  margin-top: 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.2em;
+  font-style: italic;
+}
+.login__contenedor .login__form .login__fieldset .login__boton {
+  width: 30%;
+  padding: 2em 0;
+}
+.login__contenedor .login__form .login__fieldset .login__boton .login__btn {
+  width: 100%;
+  height: 3em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  background-color: green;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 470px) {
