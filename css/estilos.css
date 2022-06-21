@@ -844,6 +844,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 .login__contenedor .login__form .login__fieldset p {
   display: flex;
@@ -851,6 +852,7 @@
   text-align: center;
   width: 50%;
   margin: 1em 0;
+  color: white;
 }
 .login__contenedor .login__form .login__fieldset p label {
   font-size: 1.2em;
@@ -876,6 +878,7 @@
   text-transform: uppercase;
   background-color: green;
   border-radius: 10px;
+  border: green solid 1px;
 }
 
 @media screen and (max-width: 470px) {
