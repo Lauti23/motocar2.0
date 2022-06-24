@@ -85,4 +85,26 @@
         font-size: 1.3em;
         letter-spacing: 1px;
     }
+    &__comprar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &-boton {
+            margin-top: 4px;
+            font-family: $fuente-principal;
+            font-style: italic;
+            font-size: 1em;
+            font-weight: 800;
+            background-color: green;
+            border: green 1px solid;
+            padding: 1px 2em;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            & p {
+                margin: 0;
+            }
+            
+        }
+    }
 }

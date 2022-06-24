@@ -339,6 +339,27 @@
   font-size: 1.3em;
   letter-spacing: 1px;
 }
+.section__comprar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.section__comprar-boton {
+  margin-top: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 800;
+  background-color: green;
+  border: green 1px solid;
+  padding: 1px 2em;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.section__comprar-boton p {
+  margin: 0;
+}
 
 .productos-grid {
   display: grid;
