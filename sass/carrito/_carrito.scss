@@ -45,7 +45,7 @@
                 }
             }
             .carrito__producto {
-                width: 50%;
+                width: 40%;
                 font-family: $fuente-principal;
                 margin: auto;
                 padding: 0 2em;
@@ -87,6 +87,23 @@
                 font-weight: bold;
                 text-align: center;
             }
+            .carrito__eliminar {
+                width: 10%;
+                text-align: center;
+                & button {
+                    width: 30%;
+                    font-family: $fuente-principal;
+                    font-weight: bold;
+                    background-color: red;
+                    border: 1px solid red;
+                    border-radius: 8px;
+                    font-size: 1.1em;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+            }
         }
     }
     &__final {
@@ -122,16 +139,19 @@
         justify-content: flex-end;
         .carrito__boton {
             width: 20%;
-            height: 3em;
+            height: 1.5em;
             border: green solid 1px;
             border-radius: 10px;
             background-color: green;
-            & P {
-                font-family: $fuente-principal;
-                font-style: italic;
-                font-weight: bold;
-                font-size: 1.7em;
+            font-family: $fuente-principal;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1.7em;
+            margin-bottom: 50px;
             }
+        .carrito__boton:hover {
+            cursor: pointer;
+        }
         }
     }
-}
+

@@ -38,45 +38,36 @@
     <main class="carrito">
         <section class="carrito__titulo">
             <h2 class="carrito__h2">CARRITO DE COMPRAS</h2>
-            <p class="carrito__vacio">Tu carrito de compras esta vacio</p>
         </section>
-        <section class="carrito__item">
-            <article class="carrito__elemento">
-                <div class="carrito__imagen">
+        <div id="carritoItem" class="carrito__item">
+                <!-- <article class="carrito__elemento">
+                <div id="carritoImg" class="carrito__imagen">
                     <img class="carrito__imagen-foto" src="../assets/motos/honda/CRF450R.jpg" alt="">
                 </div>
-                <div class="carrito__producto">
-                    <p>HONDA CRF 450R</p>
+                <div id="carritoProducto" class="carrito__producto">
+                    <p class="carrito__modelo">HONDA CRF 450R</p>
                 </div>
-                <div class="carrito__cantidad">
-                    <button class="carrito__cantidad-restar">
-                        <p>-</p>
-                    </button>
-                    <button class="carrito__cantidad-numero">
-                        <p>1</p>
-                    </button>
-                    <button class="carrito__cantidad-sumar">
-                        <p>+</p>
-                    </button>
-                </div>
+                
                 <div class="carrito__precio">
-                    <p>$1.162.900,00</p>
+                    <p id="carritoPrecio">$1.162.900,00</p>
                 </div>
-            </article>
-        </section>
+                <div class="carrito__eliminar">
+                    <button type="button">X</button>
+                </div> -->
+            <!-- </article> -->
+        </div>
         <section class="carrito__final">
             <article class="carrito__resumen">
                 <div class="carrito__total">
-                    <p>TOTAL:</p>
-                    <p>$1.162.900,00</p>
+                    <p id="total">TOTAL:</p>
+                    <p>$0</p>
                 </div>
                 
             </article>
         </section>
         <section class="carrito__pagar">
-            <button class="carrito__boton">
-                <p>PAGAR</p>
-            </button>
+            <button id="comprarCarrito" type="button" class="carrito__boton">PAGAR</button>
+            
         </section>
     </main>
     <footer class="footer">

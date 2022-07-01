@@ -313,8 +313,11 @@
   width: 100%;
   background-color: white;
   margin-top: 7em;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
-.section__marca {
+.section .section__marca {
   width: 80%;
   margin: auto;
   margin-top: 2em;
@@ -328,37 +331,50 @@
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
-.section__modelo {
-  font-family: "Manrope", sans-serif;
-  font-size: 1.5em;
-  font-weight: 500;
-  letter-spacing: 0.2em;
+.section__contenedor {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
 }
-.section__precio {
+.section__contenedor .section__tarjeta {
+  width: 30%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+.section__contenedor .section__tarjeta .section__imagen img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+.section__contenedor .section__tarjeta .section__modelo p {
   font-family: "Manrope", sans-serif;
-  font-size: 1.3em;
+  margin: 5px 0;
   letter-spacing: 1px;
 }
-.section__comprar {
+.section__contenedor .section__tarjeta .section__precio p {
+  font-family: "Manrope", sans-serif;
+  margin: 5px 0;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.section__contenedor .section__tarjeta .section__comprar {
+  width: 50%;
+  margin: auto;
+}
+.section__contenedor .section__tarjeta .section__comprar button {
   width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.section__comprar-boton {
-  margin-top: 4px;
-  font-family: "Open Sans", sans-serif;
-  font-style: italic;
-  font-size: 1em;
-  font-weight: 800;
-  background-color: green;
-  border: green 1px solid;
-  padding: 1px 2em;
-  display: flex;
-  align-items: center;
+  background-color: white;
+  border: 1px solid white;
   border-radius: 5px;
-}
-.section__comprar-boton p {
-  margin: 0;
+  margin: 5px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
 }
 
 .productos-grid {
@@ -556,6 +572,17 @@
 }
 .stock__descuento {
   text-decoration: line-through;
+}
+.stock__comprar {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  margin-top: 10px;
+  width: 120px;
+  background-color: black;
+  border: solid black 1px;
+  border-radius: 5px;
 }
 
 .servicios {
@@ -756,7 +783,7 @@
   width: 90%;
 }
 .carrito__item .carrito__elemento .carrito__producto {
-  width: 50%;
+  width: 40%;
   font-family: "Open Sans", sans-serif;
   margin: auto;
   padding: 0 2em;
@@ -795,6 +822,22 @@
   font-weight: bold;
   text-align: center;
 }
+.carrito__item .carrito__elemento .carrito__eliminar {
+  width: 10%;
+  text-align: center;
+}
+.carrito__item .carrito__elemento .carrito__eliminar button {
+  width: 30%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 8px;
+  font-size: 1.1em;
+}
+.carrito__item .carrito__elemento .carrito__eliminar button:hover {
+  cursor: pointer;
+}
 .carrito__final {
   width: 80%;
   height: 5em;
@@ -829,16 +872,18 @@
 }
 .carrito__pagar .carrito__boton {
   width: 20%;
-  height: 3em;
+  height: 1.5em;
   border: green solid 1px;
   border-radius: 10px;
   background-color: green;
-}
-.carrito__pagar .carrito__boton P {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-weight: bold;
   font-size: 1.7em;
+  margin-bottom: 50px;
+}
+.carrito__pagar .carrito__boton:hover {
+  cursor: pointer;
 }
 
 .login__contenedor {
