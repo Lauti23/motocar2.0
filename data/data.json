@@ -1,0 +1,17 @@
+[
+    {"id":1, "marca": "Honda", "producto": "CRF 300L", "precio": 659375, "imagen": "../assets/motos/honda/crf300l.jpg", "stock": 1},
+    {"id":2, "marca": "Honda", "producto": "CRF 250R", "precio": 1102960, "imagen":"../assets/motos/honda/CRF250R.jpg", "stock": 1},
+    {"id":3, "marca": "Honda", "producto": "CRF 450R", "precio": 1162900, "imagen": "../assets/motos/honda/CRF450R.jpg", "stock": 1},
+    {"id":4, "marca": "Kawasaki", "producto": "KLX 250L", "precio": 548482, "imagen": "../assets/motos/kawasaki/klx250l.jpg", "stock": 1},
+    {"id":5, "marca": "Kawasaki", "producto": "KX 250F", "precio": 1060990, "imagen": "../assets/motos/kawasaki/kx250f.jpg", "stock": 1},
+    {"id":6, "marca": "Kawasaki", "producto": "KX 450F", "precio": 1126936, "imagen": "../assets/motos/kawasaki/kx450f.jpg", "stock": 1},
+    {"id":7, "marca": "KTM", "producto": "EXC - F350", "precio": 1192380, "imagen": "../assets/motos/ktm/exc-f350.jpg", "stock": 1},
+    {"id":8, "marca": "KTM", "producto": "SX 125", "precio": 1039420, "imagen": "../assets/motos/ktm/sx125.jpg", "stock": 1},
+    {"id":9, "marca": "KTM", "producto": "SX 450", "precio": 1322352, "imagen": "../assets/motos/ktm/sx450.jpg", "stock": 1},
+    {"id":10, "marca": "Suzuki", "producto": "RM-Z 250", "precio": 1001055, "imagen": "../assets/motos/suzuki/rm-z250.jpg", "stock": 1},
+    {"id":11, "marca": "Suzuki", "producto": "RM-Z 450", "precio": 1018670, "imagen": "../assets/motos/suzuki/rm-z450.jpg", "stock": 1},
+    {"id":12, "marca": "Suzuki", "producto": "RM-Z 450 2017", "precio": 959095, "imagen": "../assets/motos/suzuki/rm-z4502017.jpg", "stock": 1},
+    {"id":13, "marca": "Yamaha", "producto": "WR 450", "precio": 1198870, "imagen": "../assets/motos/yamaha/wr450f.jpg", "stock": 1},
+    {"id":14, "marca": "Yamaha", "producto": "YZ 250", "precio": 995060, "imagen": "../assets/motos/yamaha/yz250.jpg", "stock": 1},
+    {"id":15, "marca": "Yamaha", "producto": "YZ 450", "precio": 1155095, "imagen": "../assets/motos/yamaha/yz450f.jpg", "stock": 1}
+]
