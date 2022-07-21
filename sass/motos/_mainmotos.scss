@@ -1,328 +1,65 @@
-.mainmotos {
+.main {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, 11em);
-    column-gap: 0.1em;
-    row-gap: 0.2em;
-    background-color: $color-fondo;
-    & a {
-        text-decoration: none;
-        color: black;
-    }
-    & p {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 800;
-        font-style: italic;
-        font-size: 2.6em;
-        margin-left: 0.4em;
-        margin-top: 0.4em;
-        letter-spacing: 2px;
-        transition: all .3s;
-        &:hover {
-            color: orangered;
-        }
-    }
-    &__honda {
-        grid-column: 1/13;
-        grid-row: 1;
-        height: 100%;
-        background-image: url(../assets/motos/hondafondo.jpg) ;
-        background-size: 100% 100%;
-    }
-    &__kawasaki {
-        grid-column: 1/13;
-        grid-row: 2;
-        background-image: url(../assets/motos/kawasakifondo.jpg);
-        background-size: 100% 100%;
-    }
-    &__ktm {
-        grid-column: 1/13;
-        grid-row: 3;
-        background-image: url(../assets/motos/fondoktm.jpg);
-        background-size: 100% 100%;
-    }
-    &__suzuki {
-        grid-column: 1/13;
-        grid-row: 4;
-        background-image: url(../assets/motos/suzukifondo.jpg);
-        background-size: 100% 100%;
-    }
-    &__yamaha {
-        grid-column: 1/13;
-        grid-row: 5;
-        background-image: url(../assets/motos/fondoyamaha.jpg);
-        background-size: 100% 100%;
-        border-bottom: 0.2em solid black;
-    }
-}
-.section {
-    width: 100%;
-    background-color: white;
-    margin-top: 7em;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    .section__marca {
+    .section__contenedor {
             width: 80%;
-            margin: auto;
-            margin-top: 2em;
-            margin-bottom: 2em;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 800;
-            font-style: italic;
-            font-size: 2.6em;
-            letter-spacing: 1em;
-            text-align: center;
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
-        }
-    #contenedorHonda {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .productoMoto {
-            width: 30%;
-            margin: 0 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            transition: all 0.2s;
-            &:hover {
-                transform: scale(1.1, 1.1);
-            }
-            & img {
-                width: 100%;
-            }
-            & h3 {
-                text-align: center;
-                font-family: $fuente-secundaria;
-            }
-            & p {
-                text-align: center;
-                font-family: $fuente-secundaria;
-                font-weight: bold;
-                margin: 0;
-            }
-            .contenedorBoton {
-                display: flex;
-                justify-content: center;
-                margin: 5px 0;
-                & button {
-                    padding: 0 20px;
-                    width: 100%;
-                    font-family: $fuente-principal;
-                    font-weight: 800;
-                    font-style: italic;
-                    background-color: black;
-                    border: 1px solid black;
-                    border-radius: 5px;
-                    color: white;
+            margin: 2em auto;
             
+            #contenedorItem {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                .productoMoto {
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 1.5em 1em;
+                    transition: all 0.2s;
+                    &:hover {
+                        transform: scale(1.1,1.1);
+                    }
+                    .itemImagen {
+                        width: 100%;
+                    }
+                    .itemTitulo {
+                        font-family: $fuente-principal;
+                        font-weight: 800;
+                        font-style: italic;
+                        text-transform: uppercase;
+                        margin: 0;
+                    }
+                    .itemModelo {
+                        font-family: $fuente-secundaria;
+                        font-size: 1.3em;
+                        letter-spacing: 2px;
+                    }
+                    .itemPrecio {
+                        font-family: $fuente-secundaria;
+                        font-weight: bold;
+                        font-size: 1.3em;
+                    }
+                    .contenedorBoton {
+                        width: 80%;
+                        display: flex;
+                        align-items: center;
+                        .itemBoton {
+                            width: 50%;
+                            margin: auto;
+                            font-family: $fuente-principal;
+                            font-weight: 800;
+                            font-style: italic;
+                            background-color: black;
+                            color: white;
+                            border: 1px solid black;
+                            border-radius: 5px;
+                        }
+                    }
                 }
             }
+        
         }
-    }
-    #contenedorKawasaki {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .productoMoto {
-            width: 30%;
-            margin: 0 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            transition: all 0.2s;
-            &:hover {
-                transform: scale(1.1, 1.1);
-            }
-            & img {
-                width: 100%;
-            }
-            & h3 {
-                text-align: center;
-                font-family: $fuente-secundaria;
-            }
-            & p {
-                text-align: center;
-                font-family: $fuente-secundaria;
-                font-weight: bold;
-                margin: 0;
-            }
-            .contenedorBoton {
-                display: flex;
-                justify-content: center;
-                margin: 5px 0;
-                & button {
-                    padding: 0 20px;
-                    width: 100%;
-                    font-family: $fuente-principal;
-                    font-weight: 800;
-                    font-style: italic;
-                    background-color: black;
-                    border: 1px solid black;
-                    border-radius: 5px;
-                    color: white;
-            
-                }
-            }
-        }
-    }
-    #contenedorKTM {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .productoMoto {
-            width: 30%;
-            margin: 0 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            transition: all 0.2s;
-            &:hover {
-                transform: scale(1.1, 1.1);
-            }
-            & img {
-                width: 100%;
-            }
-            & h3 {
-                width: 100%;
-                text-align: center;
-                font-family: $fuente-secundaria;
-            }
-            & p {
-                text-align: center;
-                font-family: $fuente-secundaria;
-                font-weight: bold;
-                margin: 0;
-            }
-            .contenedorBoton {
-                display: flex;
-                justify-content: center;
-                margin: 5px 0;
-                & button {
-                    padding: 0 20px;
-                    width: 100%;
-                    font-family: $fuente-principal;
-                    font-weight: 800;
-                    font-style: italic;
-                    background-color: black;
-                    border: 1px solid black;
-                    border-radius: 5px;
-                    color: white;
-            
-                }
-            }
-        }
-    }
-    #contenedorSuzuki {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .productoMoto {
-            width: 30%;
-            margin: 0 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            transition: all 0.2s;
-            &:hover {
-                transform: scale(1.1, 1.1);
-            }
-            & img {
-                width: 100%;
-            }
-            & h3 {
-                width: 100%;
-                text-align: center;
-                font-family: $fuente-secundaria;
-            }
-            & p {
-                text-align: center;
-                font-family: $fuente-secundaria;
-                font-weight: bold;
-                margin: 0;
-            }
-            .contenedorBoton {
-                display: flex;
-                justify-content: center;
-                margin: 5px 0;
-                & button {
-                    padding: 0 20px;
-                    width: 100%;
-                    font-family: $fuente-principal;
-                    font-weight: 800;
-                    font-style: italic;
-                    background-color: black;
-                    border: 1px solid black;
-                    border-radius: 5px;
-                    color: white;
-            
-                }
-            }
-        }
-    }
-    #contenedorYamaha {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .productoMoto {
-            width: 30%;
-            margin: 0 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            transition: all 0.2s;
-            &:hover {
-                transform: scale(1.1, 1.1);
-            }
-            & img {
-                width: 100%;
-            }
-            & h3 {
-                width: 100%;
-                text-align: center;
-                font-family: $fuente-secundaria;
-            }
-            & p {
-                text-align: center;
-                font-family: $fuente-secundaria;
-                font-weight: bold;
-                margin: 0;
-            }
-            .contenedorBoton {
-                display: flex;
-                justify-content: center;
-                margin: 5px 0;
-                & button {
-                    padding: 0 20px;
-                    width: 100%;
-                    font-family: $fuente-principal;
-                    font-weight: 800;
-                    font-style: italic;
-                    background-color: black;
-                    border: 1px solid black;
-                    border-radius: 5px;
-                    color: white;
-            
-                }
-            }
-        }
-    }
 }
+

@@ -250,329 +250,67 @@
   letter-spacing: 2px;
 }
 
-.mainmotos {
+.main {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(5, 11em);
-  column-gap: 0.1em;
-  row-gap: 0.2em;
-  background-color: black;
 }
-.mainmotos a {
-  text-decoration: none;
-  color: black;
+.main .section__contenedor {
+  width: 80%;
+  margin: 2em auto;
 }
-.mainmotos p {
+.main .section__contenedor #contenedorItem {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .section__contenedor #contenedorItem .productoMoto {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5em 1em;
+  transition: all 0.2s;
+}
+.main .section__contenedor #contenedorItem .productoMoto:hover {
+  transform: scale(1.1, 1.1);
+}
+.main .section__contenedor #contenedorItem .productoMoto .itemImagen {
+  width: 100%;
+}
+.main .section__contenedor #contenedorItem .productoMoto .itemTitulo {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: italic;
-  font-size: 2.6em;
-  margin-left: 0.4em;
-  margin-top: 0.4em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.main .section__contenedor #contenedorItem .productoMoto .itemModelo {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3em;
   letter-spacing: 2px;
-  transition: all 0.3s;
 }
-.mainmotos p:hover {
-  color: orangered;
-}
-.mainmotos__honda {
-  grid-column: 1/13;
-  grid-row: 1;
-  height: 100%;
-  background-image: url(../assets/motos/hondafondo.jpg);
-  background-size: 100% 100%;
-}
-.mainmotos__kawasaki {
-  grid-column: 1/13;
-  grid-row: 2;
-  background-image: url(../assets/motos/kawasakifondo.jpg);
-  background-size: 100% 100%;
-}
-.mainmotos__ktm {
-  grid-column: 1/13;
-  grid-row: 3;
-  background-image: url(../assets/motos/fondoktm.jpg);
-  background-size: 100% 100%;
-}
-.mainmotos__suzuki {
-  grid-column: 1/13;
-  grid-row: 4;
-  background-image: url(../assets/motos/suzukifondo.jpg);
-  background-size: 100% 100%;
-}
-.mainmotos__yamaha {
-  grid-column: 1/13;
-  grid-row: 5;
-  background-image: url(../assets/motos/fondoyamaha.jpg);
-  background-size: 100% 100%;
-  border-bottom: 0.2em solid black;
-}
-
-.section {
-  width: 100%;
-  background-color: white;
-  margin-top: 7em;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-}
-.section .section__marca {
-  width: 80%;
-  margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-  font-size: 2.6em;
-  letter-spacing: 1em;
-  text-align: center;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-.section #contenedorHonda {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.section #contenedorHonda .productoMoto {
-  width: 30%;
-  margin: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  transition: all 0.2s;
-}
-.section #contenedorHonda .productoMoto:hover {
-  transform: scale(1.1, 1.1);
-}
-.section #contenedorHonda .productoMoto img {
-  width: 100%;
-}
-.section #contenedorHonda .productoMoto h3 {
-  text-align: center;
-  font-family: "Manrope", sans-serif;
-}
-.section #contenedorHonda .productoMoto p {
-  text-align: center;
+.main .section__contenedor #contenedorItem .productoMoto .itemPrecio {
   font-family: "Manrope", sans-serif;
   font-weight: bold;
-  margin: 0;
+  font-size: 1.3em;
 }
-.section #contenedorHonda .productoMoto .contenedorBoton {
+.main .section__contenedor #contenedorItem .productoMoto .contenedorBoton {
+  width: 80%;
   display: flex;
-  justify-content: center;
-  margin: 5px 0;
+  align-items: center;
 }
-.section #contenedorHonda .productoMoto .contenedorBoton button {
-  padding: 0 20px;
-  width: 100%;
+.main .section__contenedor #contenedorItem .productoMoto .contenedorBoton .itemBoton {
+  width: 50%;
+  margin: auto;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-style: italic;
   background-color: black;
+  color: white;
   border: 1px solid black;
   border-radius: 5px;
-  color: white;
-}
-.section #contenedorKawasaki {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.section #contenedorKawasaki .productoMoto {
-  width: 30%;
-  margin: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  transition: all 0.2s;
-}
-.section #contenedorKawasaki .productoMoto:hover {
-  transform: scale(1.1, 1.1);
-}
-.section #contenedorKawasaki .productoMoto img {
-  width: 100%;
-}
-.section #contenedorKawasaki .productoMoto h3 {
-  text-align: center;
-  font-family: "Manrope", sans-serif;
-}
-.section #contenedorKawasaki .productoMoto p {
-  text-align: center;
-  font-family: "Manrope", sans-serif;
-  font-weight: bold;
-  margin: 0;
-}
-.section #contenedorKawasaki .productoMoto .contenedorBoton {
-  display: flex;
-  justify-content: center;
-  margin: 5px 0;
-}
-.section #contenedorKawasaki .productoMoto .contenedorBoton button {
-  padding: 0 20px;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-  background-color: black;
-  border: 1px solid black;
-  border-radius: 5px;
-  color: white;
-}
-.section #contenedorKTM {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.section #contenedorKTM .productoMoto {
-  width: 30%;
-  margin: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  transition: all 0.2s;
-}
-.section #contenedorKTM .productoMoto:hover {
-  transform: scale(1.1, 1.1);
-}
-.section #contenedorKTM .productoMoto img {
-  width: 100%;
-}
-.section #contenedorKTM .productoMoto h3 {
-  width: 100%;
-  text-align: center;
-  font-family: "Manrope", sans-serif;
-}
-.section #contenedorKTM .productoMoto p {
-  text-align: center;
-  font-family: "Manrope", sans-serif;
-  font-weight: bold;
-  margin: 0;
-}
-.section #contenedorKTM .productoMoto .contenedorBoton {
-  display: flex;
-  justify-content: center;
-  margin: 5px 0;
-}
-.section #contenedorKTM .productoMoto .contenedorBoton button {
-  padding: 0 20px;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-  background-color: black;
-  border: 1px solid black;
-  border-radius: 5px;
-  color: white;
-}
-.section #contenedorSuzuki {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.section #contenedorSuzuki .productoMoto {
-  width: 30%;
-  margin: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  transition: all 0.2s;
-}
-.section #contenedorSuzuki .productoMoto:hover {
-  transform: scale(1.1, 1.1);
-}
-.section #contenedorSuzuki .productoMoto img {
-  width: 100%;
-}
-.section #contenedorSuzuki .productoMoto h3 {
-  width: 100%;
-  text-align: center;
-  font-family: "Manrope", sans-serif;
-}
-.section #contenedorSuzuki .productoMoto p {
-  text-align: center;
-  font-family: "Manrope", sans-serif;
-  font-weight: bold;
-  margin: 0;
-}
-.section #contenedorSuzuki .productoMoto .contenedorBoton {
-  display: flex;
-  justify-content: center;
-  margin: 5px 0;
-}
-.section #contenedorSuzuki .productoMoto .contenedorBoton button {
-  padding: 0 20px;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-  background-color: black;
-  border: 1px solid black;
-  border-radius: 5px;
-  color: white;
-}
-.section #contenedorYamaha {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.section #contenedorYamaha .productoMoto {
-  width: 30%;
-  margin: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  transition: all 0.2s;
-}
-.section #contenedorYamaha .productoMoto:hover {
-  transform: scale(1.1, 1.1);
-}
-.section #contenedorYamaha .productoMoto img {
-  width: 100%;
-}
-.section #contenedorYamaha .productoMoto h3 {
-  width: 100%;
-  text-align: center;
-  font-family: "Manrope", sans-serif;
-}
-.section #contenedorYamaha .productoMoto p {
-  text-align: center;
-  font-family: "Manrope", sans-serif;
-  font-weight: bold;
-  margin: 0;
-}
-.section #contenedorYamaha .productoMoto .contenedorBoton {
-  display: flex;
-  justify-content: center;
-  margin: 5px 0;
-}
-.section #contenedorYamaha .productoMoto .contenedorBoton button {
-  padding: 0 20px;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-  background-color: black;
-  border: 1px solid black;
-  border-radius: 5px;
-  color: white;
 }
 
 .productos-grid {
